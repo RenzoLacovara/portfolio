@@ -17,6 +17,12 @@
       rel="stylesheet"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css"
     />
@@ -30,52 +36,58 @@
         "oscuro"
       );
     </script>
-    <header>
-      <nav>
-        <div class="logo">
-          <div class="img"></div>
-          <p>&ltFront-End Developer Jr/&gt</p>
-          <label class="switch">
-            <input type="checkbox" id="mode" />
-            <span class="slider"></span>
-          </label>
-        </div>
+    <header class="header">
+      <nav class="navbar navbar-expand-md header__nav" id="navbar">
         <div>
-          <ul>
-            <li><a href="">SOBRE MI</a></li>
-            <li><a href="">PROYECTOS</a></li>
-            <li><a href="">FORMACION</a></li>
-            <li><a href="">CONTACTO</a></li>
+          <a class="logo navbar-brand" href="./index.html" name="inicio"></a>
+          <p>&ltFront-End Developer Jr/&gt</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="mode" />
+          <span class="slider"></span>
+        </label>
+        <div class="burga">
+          <button
+            class="hamburger hamburger--spin navbtn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="header__nav__list">
+            <li><a href="#sobremi">SOBRE MI</a></li>
+            <li><a href="#proyectos">PROYECTOS</a></li>
+            <li><a href="#certificados">FORMACION</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <div class="container_intro">
-        <p class="tag titulo">
-          &lthtml&gt<br />&nbsp&nbsp&nbsp&ltbody&gt<br />
-        </p>
-        <p class="tag inli tag3">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lth1&gt</p>
-        <h1 class="inli">Hola!</h1>
+      <div class="container_intro" id="sobremi">
+        <p class="tag tag1 titulo">&lthtml&gt</p>
+        <p class="tag tag2">&ltbody&gt</p>
+        <p class="tag inli tag3 tagup">&lth1&gt</p>
+        <h1 class="inli">Hola!<br />Soy Renzo</h1>
+        <p class="tag inli">&lt/h1&gt</p>
         <br />
-        <h1 class="inli">&nbsp&nbsp&nbsp&nbspSoy Renzo&nbsp</h1>
-        <h1 class="inli">
-          <p class="inli laco">&nbsp&nbsp&nbsp</p>
-          Lacovara
-        </h1>
-        <p class="tag2 inli">&lt/h1&gt</p>
-        <br />
-        <p class="tag inli">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp&gt
-        </p>
+        <p class="tag tag3 inli">&ltp&gt</p>
         <h3 class="inli">Desarrollador Front-End Jr</h3>
-        <p class="tag2 inli">&lt/p&gt</p>
+        <p class="tag inli">&lt/p&gt</p>
       </div>
       <div class="container_sobremi">
-        <p class="tag inli">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lth2&gt</p>
+        <p class="tag tag3 inli">&lth2&gt</p>
         <h2 class="inli">Un poco sobre mi</h2>
-        <p class="tag2 inli">&lt/h2&gt</p>
-        <p class="tag">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp&gt</p>
+        <p class="tag inli">&lt/h2&gt</p>
+        <p class="tag3 tag">&ltp&gt</p>
         <p class="sobremi_p">
           Soy un programador autodidacta, siempre curioso y dispuesto a
           aprender, actualmente enfocado mayoritariamente al desarrollo de
@@ -86,27 +98,18 @@
           pagina va a ser la primer impresion de tus clientes, hagamos que sea
           una buena!
         </p>
-        <p class="tag">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/p&gt</p>
+        <p class="tag tag3">&lt/p&gt</p>
       </div>
-      <div class="container_proyectos">
-        <p class="tag inli">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lth2&gt</p>
-        <h2 class="inli">Proyectos recientes</h2>
-        <p class="tag2 inli">&lt/h2&gt</p>
-        <br />
-        <p class="tag inli">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp&gt
-        </p>
-        <br />
+      <div class="container_proyectos" id="proyectos">
+        <p class="tag tag3 inli">&lth2&gt</p>
+        <h2 class="inli">Proyectos</h2>
+        <p class="tag inli">&lt/h2&gt</p>
+        <p class="tag tag3">&ltp&gt</p>
         <p class="inli proyecto_p">
           Algunas ideas en las que estuve trabajando ultimamente
         </p>
-        <br />
-        <p class="tag inli">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/p&gt
-        </p>
-        <p class="tag">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltsection&gt
-        </p>
+        <p class="tag tag3">&lt/p&gt</p>
+        <p class="tag tag4">&ltsection&gt</p>
         <div class="proyectos">
           <article class="card_proyecto">
             <img id="myImg" class="imagen" src="./Imagenes/oishii.png" />
@@ -157,33 +160,21 @@
             </div>
           </article>
         </div>
-        <p class="tag">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/section&gt
-        </p>
+        <p class="tag tag4">&lt/section&gt</p>
       </div>
-      <div class="container_certificados">
-        <p class="tag inli">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lth2&gt</p>
+      <div class="container_certificados" id="certificados">
+        <p class="tag tag3 inli">&lth2&gt</p>
         <h2 class="inli">Certificaciones</h2>
-        <p class="tag2 inli">&lt/h2&gt</p>
-        <br />
-        <p class="tag inli">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp&gt
-        </p>
-        <br />
-        <p class="inli certif_p">
+        <p class="tag inli">&lt/h2&gt</p>
+        <p class="tag tag3">&ltp&gt</p>
+        <p class="certif_p">
           Siempre estoy en la busqueda de aprender un poco mas y crecer como
           profesional, he realizado varios cursos y programas para poder ampliar
           mis herramientas y garantizar la solucion de cuanto problema encuentre
           en el camino
         </p>
-        <br />
-        <p class="tag inli">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/p&gt
-        </p>
-        <br />
-        <p class="tag">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltsection&gt
-        </p>
+        <p class="tag tag3">&lt/p&gt</p>
+        <p class="tag tag4">&ltsection&gt</p>
         <div class="certificados">
           <img
             id="myImg4"
@@ -235,13 +226,11 @@
             >Ver más</a
           >
         </div>
-        <p class="tag">
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/section&gt
-        </p>
-        <p class="tag">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/body&gt</p>
-        <p class="tag">&lt/html&gt</p>
+        <p class="tag tag4">&lt/section&gt</p>
+        <p class="tag tag2">&lt/body&gt</p>
+        <p class="tag tag1">&lt/html&gt</p>
       </div>
-      <div class="container_contacto">
+      <div class="container_contacto" id="contacto">
         <div class="contacto_saludo">
           <p>
             Te interesa trabajar conmigo? Podemos coordinar un rato para
@@ -286,6 +275,11 @@
         </ul>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script/script.js"></script>
   </body>
 </html>

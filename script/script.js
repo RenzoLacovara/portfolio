@@ -1,7 +1,7 @@
-// var hamburger = document.querySelector(".hamburger");
-// hamburger.addEventListener("click", function () {
-//   hamburger.classList.toggle("is-active");
-// });
+var hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+});
 
 const darkMode = () => {
   const body = document.querySelector("body");

@@ -11,8 +11,16 @@ body {
   background-color: $color-principal;
   color: $color-secundario;
   font-family: "Josefin Sans", sans-serif;
-  @media screen and (max-width: 720px) {
-    display: flex;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "navv"
+      "body"
+      "foot";
   }
   header {
     grid-area: navv;
@@ -20,65 +28,81 @@ body {
     height: 66vh;
     width: 150px;
     background-color: #e3ecdf;
-    @media screen and (max-width: 720px) {
-      position: absolute;
+
+    @media screen and (max-width: 768px) {
       height: 100px;
       width: 100%;
+      position: initial;
     }
     nav {
       width: 90%;
       margin: 0px 5%;
       height: 100%;
-      @media screen and (max-width: 720px) {
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 768px) {
         width: 100%;
         margin: 0px;
+        flex-direction: row;
+        justify-content: space-between;
       }
       .logo {
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        @media screen and (max-width: 720px) {
-          flex-direction: row;
-          justify-content: space-between;
-          width: 100%;
-          height: 100%;
+        margin: 0px;
+        height: 80px;
+        width: 80px;
+        margin-left: 15px;
+        background-image: url(../Imagenes/logo2d.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 100;
+      }
+      p {
+        font-size: 0.7rem;
+        @media screen and (max-width: 768px) {
+          display: none;
         }
-        .img {
-          margin: 0px;
-          height: 80px;
-          width: 80px;
-          background-image: url(../Imagenes/logo2d.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-        p {
-          font-size: 0.65rem;
-          text-align: center;
+      }
+      .hamburger {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: initial;
         }
       }
       div {
         height: 50%;
-        padding: 10% 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @media screen and (max-width: 720px) {
-          flex-direction: row;
+        background-color: transparent;
+
+        background-color: #e3ecdf;
+        @media screen and (max-width: 768px) {
+          height: 100%;
         }
         ul {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           padding: 0px;
-          @media screen and (max-width: 720px) {
-            flex-direction: row;
+          background-color: #e3ecdf;
+
+          @media screen and (max-width: 768px) {
+            justify-content: end;
+            margin-top: 180px;
+            height: 100%;
+            width: 100%;
+            border-radius: 0px 0px 20px 20px;
+            -webkit-border-radius: 0px 0px 20px 20px;
+            -moz-border-radius: 0px 0px 20px 20px;
+            -ms-border-radius: 0px 0px 20px 20px;
+            -o-border-radius: 0px 0px 20px 20px;
           }
           li {
             margin: 10px auto;
             list-style: none;
+
             a {
               &:hover {
                 color: $color-detalle;
@@ -92,28 +116,30 @@ body {
   main {
     grid-area: body;
     width: 100%;
+
     div {
       .inli {
         display: inline-block;
       }
     }
     .container_intro {
-      margin-top: 50px;
+      margin-top: 30px;
       .titulo {
-        margin-bottom: 30px;
+        margin-top: 30px;
       }
       h1 {
         font-size: 4.5rem;
-      }
-      .laco {
-        display: none;
-        @media screen and (max-width: 960px) {
-          display: initial;
+        @media screen and (max-width: 720px) {
+          font-size: 3rem;
         }
       }
+
       h3 {
         margin-top: 30px;
         font-size: 2rem;
+        @media screen and (max-width: 720px) {
+          font-size: 1.2rem;
+        }
       }
     }
     .container_sobremi {
@@ -122,20 +148,34 @@ body {
 
       h2 {
         font-size: 2.5rem;
+        @media screen and (max-width: 720px) {
+          font-size: 1.6rem;
+        }
       }
       .sobremi_p {
         font-size: 1.2rem;
         margin: 0px 80px;
+        @media screen and (max-width: 720px) {
+          font-size: 0.9rem;
+          margin: 0px 10%;
+        }
       }
     }
     .container_proyectos {
       margin-top: 60px;
       h2 {
         font-size: 2.5rem;
+        @media screen and (max-width: 720px) {
+          font-size: 1.6rem;
+        }
       }
       .proyecto_p {
         font-size: 1.2rem;
         margin: 0px 80px;
+        @media screen and (max-width: 720px) {
+          font-size: 0.9rem;
+          margin: 0px 10%;
+        }
       }
       .proyectos {
         .card_proyecto {
@@ -151,12 +191,20 @@ body {
           -ms-border-radius: 25px;
           -o-border-radius: 25px;
           overflow: hidden;
+          @media screen and (max-width: 700px) {
+            flex-direction: column;
+            height: 550px;
+          }
           .imagen {
             height: auto;
             width: 70%;
             object-fit: contain;
             cursor: zoom-in;
             transition: 0.3s;
+            @media screen and (max-width: 700px) {
+              width: 100%;
+              height: 65%;
+            }
             &:hover {
               opacity: 0.7;
             }
@@ -170,8 +218,15 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 700px) {
+              width: 100%;
+              height: 35%;
+            }
             p {
               margin-bottom: 40px;
+              @media screen and (max-width: 700px) {
+                margin-bottom: 20px;
+              }
             }
             .link_sitio {
               padding: 10px 10px;
@@ -193,12 +248,20 @@ body {
       }
     }
     .container_certificados {
+      margin-top: 60px;
       h2 {
         font-size: 2.5rem;
+        @media screen and (max-width: 720px) {
+          font-size: 1.6rem;
+        }
       }
       .certif_p {
         font-size: 1.2rem;
         margin: 0px 80px;
+        @media screen and (max-width: 720px) {
+          font-size: 0.9rem;
+          margin: 0px 10%;
+        }
       }
       .certificados {
         display: grid;
@@ -269,6 +332,9 @@ body {
           object-fit: cover;
           cursor: zoom-in;
           transition: 0.3s;
+          @media screen and (max-width: 450px) {
+            width: 250px;
+          }
           &:hover {
             opacity: 0.7;
           }
@@ -303,6 +369,10 @@ body {
       justify-content: center;
       align-items: center;
       text-align: center;
+      @media screen and (max-width: 850px) {
+        margin: 60px 10%;
+        width: 80%;
+      }
       .contacto_saludo {
         padding: 20px;
         border-radius: 20px;
@@ -315,6 +385,7 @@ body {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
           rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
         margin-bottom: 60px;
+
         a {
           i {
             color: $color-secundario;
@@ -341,10 +412,10 @@ body {
     width: 150px;
     margin-top: 66vh;
     height: 33vh;
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       width: 100%;
       height: 100px;
-      position: absolute;
+      position: initial;
       margin: 0px;
     }
     p {
@@ -360,12 +431,16 @@ body {
         align-items: flex-start;
         padding: 0px;
         gap: 3px;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 768px) {
           flex-direction: row;
+          justify-content: center;
         }
         li {
           margin: auto;
           list-style: none;
+          @media screen and (max-width: 768px) {
+            margin: 0;
+          }
           a {
             i {
               color: $color-principal;
@@ -390,12 +465,20 @@ body {
 
 .tag {
   font-family: "Caveat", cursive;
-  margin-left: 40px;
+}
+.tag1 {
+  margin-left: 10px;
 }
 .tag2 {
-  font-family: "Caveat", cursive;
+  margin-left: 25px;
 }
 .tag3 {
+  margin-left: 40px;
+}
+.tag4 {
+  margin-left: 50px;
+}
+.tagup {
   vertical-align: top;
 }
 .switch {
@@ -468,13 +551,24 @@ body {
   header {
     background-color: #182d4a;
     nav {
+      background-color: #182d4a;
       .logo {
-        div {
-          background-image: url(../imagenes/logo2.png);
+        background-image: url(../imagenes/logo2.png);
+        background-color: #182d4a;
+      }
+      .burga {
+        .hamburger {
+          .hamburger-inner,
+          .hamburger-inner::after,
+          .hamburger-inner::before {
+            background-color: $color-principal;
+          }
         }
       }
       div {
+        background-color: #182d4a;
         ul {
+          background-color: #182d4a;
           li {
             a {
               &:hover {
@@ -611,4 +705,96 @@ body {
   to {
     transform: scale(0);
   }
+}
+.hamburger {
+  width: 95px;
+  height: 80px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  &:hover {
+    color: $color-detalle;
+  }
+  .hamburger-box {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    margin: 0px;
+    .hamburger-inner {
+      display: block;
+      top: 50%;
+      margin-top: -2px;
+    }
+  }
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: $color-secundario;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: $color-secundario;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spin .hamburger-inner::before {
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+.hamburger--spin .hamburger-inner::after {
+  transition: bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--spin.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+.hamburger--spin.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
