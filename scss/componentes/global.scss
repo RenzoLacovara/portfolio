@@ -34,7 +34,7 @@ body {
       width: 100%;
       position: initial;
     }
-    nav {
+    .header__nav {
       width: 90%;
       margin: 0px 5%;
       height: 100%;
@@ -129,7 +129,7 @@ body {
       }
       h1 {
         font-size: 4.5rem;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 550px) {
           font-size: 3rem;
         }
       }
@@ -137,7 +137,7 @@ body {
       h3 {
         margin-top: 30px;
         font-size: 2rem;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 550px) {
           font-size: 1.2rem;
         }
       }
@@ -148,14 +148,14 @@ body {
 
       h2 {
         font-size: 2.5rem;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 550px) {
           font-size: 1.6rem;
         }
       }
       .sobremi_p {
         font-size: 1.2rem;
         margin: 0px 80px;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 550px) {
           font-size: 0.9rem;
           margin: 0px 10%;
         }
@@ -165,14 +165,14 @@ body {
       margin-top: 60px;
       h2 {
         font-size: 2.5rem;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 550px) {
           font-size: 1.6rem;
         }
       }
       .proyecto_p {
         font-size: 1.2rem;
         margin: 0px 80px;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 550px) {
           font-size: 0.9rem;
           margin: 0px 10%;
         }
@@ -251,14 +251,14 @@ body {
       margin-top: 60px;
       h2 {
         font-size: 2.5rem;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 550px) {
           font-size: 1.6rem;
         }
       }
       .certif_p {
         font-size: 1.2rem;
         margin: 0px 80px;
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 550px) {
           font-size: 0.9rem;
           margin: 0px 10%;
         }
