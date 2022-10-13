@@ -33,87 +33,184 @@ body header {
     position: initial;
   }
 }
-body header .header__nav {
-  width: 90%;
-  margin: 0px 5%;
-  height: 100%;
+body header nav {
+  background-color: #e3ecdf;
+}
+body header nav .container-fluid {
+  height: 66vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
-  body header .header__nav {
-    width: 100%;
-    margin: 0px;
+  body header nav .container-fluid {
     flex-direction: row;
-    justify-content: space-between;
+    height: 100px;
   }
 }
-body header .header__nav .logo {
-  margin: 0px;
+body header nav .container-fluid .rl {
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  body header nav .container-fluid .rl {
+    height: 100px;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  body header nav .container-fluid .rl .switch {
+    margin: auto;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+}
+body header nav .container-fluid .rl .divlogo {
   height: 80px;
   width: 80px;
-  margin-left: 15px;
   background-image: url(../Imagenes/logo2d.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 100;
-}
-body header .header__nav p {
-  font-size: 0.7rem;
 }
 @media screen and (max-width: 768px) {
-  body header .header__nav p {
+  body header nav .container-fluid .rl .divlogo {
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  body header nav .container-fluid .rl .divlogo {
+    margin-left: 0px;
+  }
+}
+body header nav .container-fluid .rl p {
+  text-align: center;
+  font-size: 0.85rem;
+}
+@media screen and (max-width: 768px) {
+  body header nav .container-fluid .rl p {
     display: none;
   }
 }
-body header .header__nav .hamburger {
+body header nav .container-fluid .burga {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  body header .header__nav .hamburger {
+  body header nav .container-fluid .burga {
+    margin-right: 15px;
     display: initial;
+    z-index: 1111;
   }
 }
-body header .header__nav div {
-  height: 50%;
+@media only screen and (max-width: 410px) {
+  body header nav .container-fluid .burga {
+    margin-right: 0px;
+  }
+}
+body header nav .container-fluid .offcanvas {
+  height: 33vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: transparent;
-  background-color: #e3ecdf;
+  align-items: center;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 @media screen and (max-width: 768px) {
-  body header .header__nav div {
-    height: 100%;
+  body header nav .container-fluid .offcanvas {
+    height: 300px;
+    width: 300px;
+    background-color: #e3ecdf;
+    -webkit-border-radius: 0px 0px 0px 100%;
+    overflow: hidden;
+    align-items: flex-end;
   }
 }
-body header .header__nav div ul {
+@media only screen and (max-width: 768px) and (max-width: 410px) {
+  body header nav .container-fluid .offcanvas {
+    height: 250px;
+    width: 250px;
+  }
+}
+body header nav .container-fluid .offcanvas .offcanvas-body ul {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  background-color: #e3ecdf;
+  justify-content: center;
+  align-items: center;
 }
-@media screen and (max-width: 768px) {
-  body header .header__nav div ul {
-    justify-content: end;
-    margin-top: 180px;
-    height: 100%;
-    width: 100%;
-    border-radius: 0px 0px 20px 20px;
-    -webkit-border-radius: 0px 0px 20px 20px;
-    -moz-border-radius: 0px 0px 20px 20px;
-    -ms-border-radius: 0px 0px 20px 20px;
-    -o-border-radius: 0px 0px 20px 20px;
+@media only screen and (width: 768px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul {
+    flex-direction: row;
+    gap: 25px;
+    margin-right: 15px;
   }
 }
-body header .header__nav div ul li {
+@media only screen and (max-width: 767px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul {
+    align-items: flex-end;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link1 {
+    padding-right: 150px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link1 {
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link2 {
+    padding-right: 100px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link2 {
+    padding-right: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link3 {
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link3 {
+    padding-right: 40px;
+  }
+}
+body header nav .container-fluid .offcanvas .offcanvas-body ul li {
   margin: 10px auto;
   list-style: none;
 }
-body header .header__nav div ul li a:hover {
+@media screen and (max-width: 767px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul li {
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul li a {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 410px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul li a {
+    font-size: 0.8rem;
+  }
+}
+body header nav .container-fluid .offcanvas .offcanvas-body ul li a:hover {
   color: #457b9d;
 }
 body main {
@@ -416,7 +513,7 @@ body footer {
   position: fixed;
   width: 150px;
   margin-top: 66vh;
-  height: 33vh;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   body footer {
@@ -566,22 +663,29 @@ body footer div ul li a i:hover {
 .oscuro header nav {
   background-color: #182d4a;
 }
-.oscuro header nav .logo {
-  background-image: url(../imagenes/logo2.png);
-  background-color: #182d4a;
+.oscuro header nav .container-fluid .rl .divlogo {
+  height: 80px;
+  width: 80px;
+  background-image: url(../Imagenes/logo2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .oscuro header nav .burga .hamburger .hamburger-inner,
 .oscuro header nav .burga .hamburger .hamburger-inner::after,
 .oscuro header nav .burga .hamburger .hamburger-inner::before {
   background-color: #f1faee;
 }
-.oscuro header nav div {
+.oscuro header nav #offcanvasNavbar {
   background-color: #182d4a;
 }
-.oscuro header nav div ul {
+.oscuro header nav #offcanvasNavbar .offcanvas-body {
   background-color: #182d4a;
 }
-.oscuro header nav div ul li a:hover {
+.oscuro header nav #offcanvasNavbar .offcanvas-body ul {
+  background-color: #182d4a;
+}
+.oscuro header nav #offcanvasNavbar .offcanvas-body ul li a:hover {
   color: #3dcfac;
 }
 .oscuro main .container_proyectos .proyectos .card_proyecto div {
