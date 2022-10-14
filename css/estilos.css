@@ -102,7 +102,7 @@ body header nav .container-fluid .rl p {
 body header nav .container-fluid .burga {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body header nav .container-fluid .burga {
     margin-right: 15px;
     display: initial;
@@ -128,8 +128,8 @@ body header nav .container-fluid .offcanvas {
 }
 @media screen and (max-width: 768px) {
   body header nav .container-fluid .offcanvas {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     background-color: #e3ecdf;
     -webkit-border-radius: 0px 0px 0px 100%;
     overflow: hidden;
@@ -138,8 +138,8 @@ body header nav .container-fluid .offcanvas {
 }
 @media only screen and (max-width: 768px) and (max-width: 410px) {
   body header nav .container-fluid .offcanvas {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
   }
 }
 body header nav .container-fluid .offcanvas .offcanvas-body ul {
@@ -152,43 +152,65 @@ body header nav .container-fluid .offcanvas .offcanvas-body ul {
 @media only screen and (width: 768px) {
   body header nav .container-fluid .offcanvas .offcanvas-body ul {
     flex-direction: row;
-    gap: 25px;
-    margin-right: 15px;
+    margin: 0px;
+    padding: 0px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   body header nav .container-fluid .offcanvas .offcanvas-body ul {
     align-items: flex-end;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   body header nav .container-fluid .offcanvas .offcanvas-body ul #link1 {
-    padding-right: 150px;
+    padding-right: 200px;
   }
 }
 @media only screen and (max-width: 410px) {
   body header nav .container-fluid .offcanvas .offcanvas-body ul #link1 {
+    padding-right: 170px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link2 {
+    padding-right: 160px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link2 {
+    padding-right: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link3 {
     padding-right: 120px;
   }
 }
-@media screen and (max-width: 767px) {
-  body header nav .container-fluid .offcanvas .offcanvas-body ul #link2 {
+@media only screen and (max-width: 410px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link3 {
     padding-right: 100px;
   }
 }
-@media only screen and (max-width: 410px) {
-  body header nav .container-fluid .offcanvas .offcanvas-body ul #link2 {
-    padding-right: 80px;
-  }
-}
-@media screen and (max-width: 767px) {
-  body header nav .container-fluid .offcanvas .offcanvas-body ul #link3 {
+@media screen and (max-width: 768px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link4 {
     padding-right: 50px;
   }
 }
 @media only screen and (max-width: 410px) {
-  body header nav .container-fluid .offcanvas .offcanvas-body ul #link3 {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link4 {
     padding-right: 40px;
+  }
+}
+@media only screen and (width: 768px) {
+  body header nav .container-fluid .offcanvas .offcanvas-body ul #link1,
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link2,
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link3,
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link4,
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link5 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.8rem;
+    margin-left: 15px;
   }
 }
 body header nav .container-fluid .offcanvas .offcanvas-body ul li {
@@ -445,6 +467,47 @@ body main .container_certificados .certificados img {
 }
 body main .container_certificados .certificados img:hover {
   opacity: 0.7;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+body main .container_certificados .tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body main .container_certificados .tools img {
+  margin: 10px;
+  filter: grayscale(0.8);
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  -webkit-filter: grayscale(0.8);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  body main .container_certificados .tools img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+}
+body main .container_certificados .tools img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  animation: shake 0.4s;
+  -webkit-animation: shake 0.4s;
 }
 body main .container_certificados .enlace {
   margin-top: 20px;
@@ -506,6 +569,13 @@ body main .container_contacto .contacto_saludo a i {
 }
 body main .container_contacto .contacto_saludo a i:hover {
   background-color: #3dcfac;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  animation: shake 0.4s;
+  -webkit-animation: shake 0.4s;
 }
 body footer {
   background-color: #e3ecdf;
@@ -564,6 +634,23 @@ body footer div ul li a i {
 }
 body footer div ul li a i:hover {
   background-color: #457b9d;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  animation: shake 0.4s;
+  -webkit-animation: shake 0.4s;
+}
+body .goup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+body .goup a i:hover {
+  color: #457b9d;
 }
 
 .tag {
@@ -726,6 +813,9 @@ body footer div ul li a i:hover {
 .oscuro footer div ul li a i:hover {
   background-color: #3dcfac;
 }
+.oscuro .goup a i:hover {
+  color: #3dcfac;
+}
 
 .modal {
   display: none;
@@ -789,6 +879,15 @@ body footer div ul li a i:hover {
   }
   to {
     transform: scale(0);
+  }
+}
+@keyframes shake {
+  70% {
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
   }
 }
 .hamburger {
@@ -890,6 +989,25 @@ body footer div ul li a i:hover {
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.visible {
+  visibility: visible;
+  animation: visible 0.4s;
+  -webkit-animation: visible 0.4s;
+}
+
+.hidd {
+  visibility: hidden;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

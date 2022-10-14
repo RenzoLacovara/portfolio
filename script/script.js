@@ -68,3 +68,14 @@ function cerrarimg() {
     modalzoom.className = "modal-content";
   }, 400);
 }
+var lastScrollTop;
+goup = document.getElementById("goup");
+window.addEventListener("scroll", function () {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    goup.classList.add("visible");
+  } else {
+    goup.classList.remove("visible");
+  }
+  lastScrollTop = scrollTop;
+});
