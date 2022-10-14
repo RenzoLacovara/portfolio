@@ -243,10 +243,10 @@ body main div .inli {
   display: inline-block;
 }
 body main .container_intro {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 body main .container_intro .titulo {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 body main .container_intro h1 {
   font-size: 4.5rem;

@@ -79,3 +79,6 @@ window.addEventListener("scroll", function () {
   }
   lastScrollTop = scrollTop;
 });
+function toggle() {
+  document.querySelector("#burg").classList.remove("is-active");
+}

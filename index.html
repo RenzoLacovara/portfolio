@@ -50,14 +50,13 @@
               <span class="slider"></span>
             </label>
           </div>
-          <div class="burga">
+          <div class="burga" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
             <button
               class="hamburger hamburger--spin navbtn"
               type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              
+              id="burg"
             >
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
@@ -69,14 +68,16 @@
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            onclick="toggle()"
           >
             <div class="offcanvas-body">
               <ul class="navbar-nav">
                 <li><a id="link1" href="#sobremi">SOBRE MI</a></li>
-                <li><a id="link2"href="#proyectos">PROYECTOS</a></li>
-                <li><a id="link3"href="#certificados">FORMACION</a></li>
-                <li><a id="link4"href="#tools">HERRAMIENTAS</a></li>
-                <li><a id="link5"href="#contacto">CONTACTO</a></li>
+                <li><a id="link2"href="#proyectos" >PROYECTOS</a></li>
+                <li><a id="link3"href="#certificados" >FORMACION</a></li>
+                <li><a id="link4"href="#tools" >HERRAMIENTAS</a></li>
+                <li><a id="link5"href="#contacto" >CONTACTO</a></li>
                   </ul>
                 </li>
               </ul>
@@ -87,7 +88,7 @@
     </header>
     <main>
       <div class="container_intro" id="sobremi">
-        <p class="tag tag1 titulo" id="principio">&lthtml&gt</p>
+        <p class="tag tag1 titulo">&lthtml&gt</p>
         <p class="tag tag2">&ltbody&gt</p>
         <p class="tag inli tag3 tagup">&lth1&gt</p>
         <h1 class="inli">Hola!<br />Soy Renzo</h1>
@@ -240,12 +241,12 @@
           >
         </div>
         <p class="tag tag4">&lt/section&gt</p>
-        <div>
+        <div id="tools">
           <p class="tag tag3 inli">&lth2&gt</p>
         <h2 class="inli">Herramientas</h2>
         <p class="tag inli">&lt/h2&gt</p>
         <p class="tag tag4">&ltsection&gt</p>
-        <div class="tools" id="tools">
+        <div class="tools">
           <img src="./Imagenes/html.png">
           <img src="./Imagenes/css.png">
           <img src="./Imagenes/sass.png">
@@ -304,7 +305,7 @@
         </ul>
       </div>
       <div class="goup hidd" id="goup">
-        <a href="#principio"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        <a href="#sobremi"><i class="fa-solid fa-circle-arrow-up"></i></a>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
