@@ -402,6 +402,9 @@ body main .container_proyectos .proyectos .card_proyecto div .herr .java {
 body main .container_proyectos .proyectos .card_proyecto div .herr .react {
   background-color: #61dafb;
 }
+body main .container_proyectos .proyectos .card_proyecto div .herr .tail {
+  background-color: #1bb5b9;
+}
 body main .container_proyectos .proyectos .card_proyecto div .link_sitio {
   padding: 10px 10px;
   width: 110px;
