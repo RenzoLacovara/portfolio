@@ -260,6 +260,9 @@ body main .container_intro h3 {
   margin-top: 30px;
   font-size: 2rem;
 }
+body main .container_intro h3 span {
+  color: #457b9d;
+}
 @media screen and (max-width: 550px) {
   body main .container_intro h3 {
     font-size: 1.2rem;
@@ -821,6 +824,9 @@ body .goup a i:hover {
   background-color: #182d4a;
 }
 .oscuro header nav #offcanvasNavbar .offcanvas-body ul li a:hover {
+  color: #3dcfac;
+}
+.oscuro main #sobremi h3 span {
   color: #3dcfac;
 }
 .oscuro main .container_proyectos .proyectos .card_proyecto div {

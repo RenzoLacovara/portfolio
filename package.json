@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RenzoLacovara/portfolio/issues"
   },
-  "homepage": "https://github.com/RenzoLacovara/portfolio#readme"
+  "homepage": "https://github.com/RenzoLacovara/portfolio#readme",
+  "dependencies": {
+    "typed.js": "^2.0.12"
+  }
 }

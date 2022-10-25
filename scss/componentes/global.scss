@@ -231,6 +231,9 @@ body {
       h3 {
         margin-top: 30px;
         font-size: 2rem;
+        span {
+          color: $color-detalle;
+        }
         @media screen and (max-width: 550px) {
           font-size: 1.2rem;
         }
@@ -798,6 +801,13 @@ body {
     }
   }
   main {
+    #sobremi {
+      h3{
+        span{
+          color: $color-detalled;
+        }
+      }
+    }
     .container_proyectos {
       .proyectos {
         .card_proyecto {
