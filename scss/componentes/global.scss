@@ -301,7 +301,7 @@ body {
           .imagen {
             height: auto;
             width: 70%;
-            object-fit: contain;
+            object-fit: cover;
             cursor: zoom-in;
             transition: 0.3s;
             @media screen and (max-width: 700px) {
@@ -905,12 +905,12 @@ body {
 .modal-content {
   margin: auto;
   display: block;
-  height: 80%;
-  width: 80%;
-  object-fit: contain;
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
   background-color: transparent;
-  @media only screen and (max-width: 1200px) {
-    width: 100%;
+  @media only screen and (max-width: 768px) {
+    width: 90%;
     object-fit: contain;
   }
 }

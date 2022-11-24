@@ -335,7 +335,7 @@ body main .container_proyectos .proyectos .card_proyecto {
 body main .container_proyectos .proyectos .card_proyecto .imagen {
   height: auto;
   width: 70%;
-  object-fit: contain;
+  object-fit: cover;
   cursor: zoom-in;
   transition: 0.3s;
 }
@@ -892,14 +892,14 @@ body .goup a i:hover {
 .modal-content {
   margin: auto;
   display: block;
-  height: 80%;
-  width: 80%;
-  object-fit: contain;
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
   background-color: transparent;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .modal-content {
-    width: 100%;
+    width: 90%;
     object-fit: contain;
   }
 }
