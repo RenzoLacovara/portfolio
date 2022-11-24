@@ -73,12 +73,14 @@ body header nav .container-fluid .rl {
   }
 }
 body header nav .container-fluid .rl .divlogo {
-  height: 80px;
-  width: 80px;
-  background-image: url(../Imagenes/logo2d.png);
+  height: 100px;
+  width: 100px;
+  background-image: url(../Imagenes/yo2.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  filter: sepia(8%) saturate(5015%) hue-rotate(278deg) brightness(33%) contrast(90%);
+  -webkit-filter: sepia(8%) saturate(5015%) hue-rotate(278deg) brightness(33%) contrast(90%);
 }
 @media screen and (max-width: 768px) {
   body header nav .container-fluid .rl .divlogo {
@@ -802,12 +804,14 @@ body .goup a i:hover {
   background-color: #182d4a;
 }
 .oscuro header nav .container-fluid .rl .divlogo {
-  height: 80px;
-  width: 80px;
-  background-image: url(../Imagenes/logo2.png);
+  height: 100px;
+  width: 100px;
+  background-image: url(../Imagenes/yo2.png);
+  filter: invert(97%);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  -webkit-filter: invert(97%);
 }
 .oscuro header nav .burga .hamburger .hamburger-inner,
 .oscuro header nav .burga .hamburger .hamburger-inner::after,

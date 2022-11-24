@@ -66,13 +66,19 @@ body {
               -o-transform: rotate(90deg);
             }
           }
+
           .divlogo {
-            height: 80px;
-            width: 80px;
-            background-image: url(../Imagenes/logo2d.png);
+            height: 100px;
+            width: 100px;
+            background-image: url(../Imagenes/yo2.png);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
+            filter: sepia(8%) saturate(5015%) hue-rotate(278deg) brightness(33%)
+              contrast(90%);
+            -webkit-filter: sepia(8%) saturate(5015%) hue-rotate(278deg)
+              brightness(33%) contrast(90%);
+
             @media screen and (max-width: 768px) {
               margin-left: 15px;
             }
@@ -764,12 +770,14 @@ body {
       .container-fluid {
         .rl {
           .divlogo {
-            height: 80px;
-            width: 80px;
-            background-image: url(../Imagenes/logo2.png);
+            height: 100px;
+            width: 100px;
+            background-image: url(../Imagenes/yo2.png);
+            filter: invert(97%);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
+            -webkit-filter: invert(97%);
           }
         }
       }
@@ -802,8 +810,8 @@ body {
   }
   main {
     #sobremi {
-      h3{
-        span{
+      h3 {
+        span {
           color: $color-detalled;
         }
       }
