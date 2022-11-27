@@ -907,12 +907,8 @@ body {
   display: block;
   height: 90%;
   width: 90%;
-  object-fit: cover;
+  object-fit: contain;
   background-color: transparent;
-  @media only screen and (max-width: 768px) {
-    width: 90%;
-    object-fit: contain;
-  }
 }
 .modal-content {
   -webkit-animation-name: zoom;

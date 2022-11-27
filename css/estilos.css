@@ -894,14 +894,8 @@ body .goup a i:hover {
   display: block;
   height: 90%;
   width: 90%;
-  object-fit: cover;
+  object-fit: contain;
   background-color: transparent;
-}
-@media only screen and (max-width: 768px) {
-  .modal-content {
-    width: 90%;
-    object-fit: contain;
-  }
 }
 
 .modal-content {
