@@ -27,7 +27,7 @@ body {
     position: fixed;
     height: 66vh;
     width: 150px;
-    background-color: #e3ecdf;
+    background-color: $color-principald;
 
     @media screen and (max-width: 768px) {
       height: 100px;
@@ -35,7 +35,7 @@ body {
       position: initial;
     }
     nav {
-      background-color: #e3ecdf;
+      background-color: $color-principald;
       .container-fluid {
         height: 66vh;
         display: flex;
@@ -119,7 +119,7 @@ body {
           @media screen and (max-width: 768px) {
             height: 350px;
             width: 350px;
-            background-color: #e3ecdf;
+            background-color: $color-principald;
             -webkit-border-radius: 0px 0px 0px 100%;
             overflow: hidden;
             align-items: flex-end;
@@ -316,7 +316,7 @@ body {
             }
           }
           div {
-            background-color: #e3ecdf;
+            background-color: $color-principald;
             padding: 25px 15px;
             width: 30%;
             text-align: center;
@@ -600,7 +600,7 @@ body {
     }
   }
   footer {
-    background-color: #e3ecdf;
+    background-color: $color-principald;
     grid-area: foot;
     position: fixed;
     width: 150px;
@@ -791,11 +791,11 @@ body {
         }
       }
       #offcanvasNavbar {
-        background-color: #182d4a;
+        background-color: $color-secundariod;
         .offcanvas-body {
-          background-color: #182d4a;
+          background-color: $color-secundariod;
           ul {
-            background-color: #182d4a;
+            background-color: $color-secundariod;
             li {
               a {
                 &:hover {
@@ -820,7 +820,7 @@ body {
       .proyectos {
         .card_proyecto {
           div {
-            background-color: #182d4a;
+            background-color: $color-secundariod;
             a {
               color: $color-secundario;
               background-color: $color-principal;
@@ -860,7 +860,7 @@ body {
     }
   }
   footer {
-    background-color: #182d4a;
+    background-color: $color-secundariod;
     div {
       ul {
         li {
