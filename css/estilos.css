@@ -5,8 +5,8 @@ body {
   grid-template-columns: 150px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "navv body" "navv body" "foot body";
-  background-color: #f1faee;
-  color: #1d3557;
+  background-color: #edf2f4;
+  color: #212121;
   font-family: "Josefin Sans", sans-serif;
 }
 @media screen and (max-width: 768px) {
@@ -24,7 +24,7 @@ body header {
   position: fixed;
   height: 66vh;
   width: 150px;
-  background-color: #e3ecdf;
+  background-color: #dfe0e0;
 }
 @media screen and (max-width: 768px) {
   body header {
@@ -34,7 +34,7 @@ body header {
   }
 }
 body header nav {
-  background-color: #e3ecdf;
+  background-color: #dfe0e0;
 }
 body header nav .container-fluid {
   height: 66vh;
@@ -79,8 +79,6 @@ body header nav .container-fluid .rl .divlogo {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  filter: sepia(8%) saturate(5015%) hue-rotate(278deg) brightness(33%) contrast(90%);
-  -webkit-filter: sepia(8%) saturate(5015%) hue-rotate(278deg) brightness(33%) contrast(90%);
 }
 @media screen and (max-width: 768px) {
   body header nav .container-fluid .rl .divlogo {
@@ -132,7 +130,7 @@ body header nav .container-fluid .offcanvas {
   body header nav .container-fluid .offcanvas {
     height: 350px;
     width: 350px;
-    background-color: #e3ecdf;
+    background-color: #dfe0e0;
     -webkit-border-radius: 0px 0px 0px 100%;
     overflow: hidden;
     align-items: flex-end;
@@ -235,7 +233,7 @@ body header nav .container-fluid .offcanvas .offcanvas-body ul li {
   }
 }
 body header nav .container-fluid .offcanvas .offcanvas-body ul li a:hover {
-  color: #457b9d;
+  color: #d72638;
 }
 body main {
   grid-area: body;
@@ -263,7 +261,7 @@ body main .container_intro h3 {
   font-size: 2rem;
 }
 body main .container_intro h3 span {
-  color: #457b9d;
+  color: #d72638;
 }
 @media screen and (max-width: 550px) {
   body main .container_intro h3 {
@@ -354,7 +352,7 @@ body main .container_proyectos .proyectos .card_proyecto .imagen:hover {
   opacity: 0.7;
 }
 body main .container_proyectos .proyectos .card_proyecto div {
-  background-color: #e3ecdf;
+  background-color: #dfe0e0;
   padding: 25px 15px;
   width: 30%;
   text-align: center;
@@ -429,11 +427,11 @@ body main .container_proyectos .proyectos .card_proyecto div .link_sitio {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-  background-color: #1d3557;
+  background-color: #212121;
   text-decoration: none;
 }
 body main .container_proyectos .proyectos .card_proyecto div .link_sitio:hover {
-  background-color: #457b9d;
+  background-color: #d72638;
 }
 body main .container_certificados {
   margin-top: 60px;
@@ -577,11 +575,11 @@ body main .container_certificados .enlace a {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-  background-color: #1d3557;
+  background-color: #212121;
   text-decoration: none;
 }
 body main .container_certificados .enlace a:hover {
-  background-color: #457b9d;
+  background-color: #d72638;
 }
 body main .container_contacto {
   width: 100%;
@@ -604,15 +602,15 @@ body main .container_contacto .contacto_saludo {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background-color: #1d3557;
-  color: #f1faee;
+  background-color: #212121;
+  color: #edf2f4;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   margin-bottom: 60px;
 }
 body main .container_contacto .contacto_saludo a i {
-  color: #1d3557;
+  color: #212121;
   font-size: 1.2rem;
-  background-color: #f1faee;
+  background-color: #edf2f4;
   padding: 6px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -621,7 +619,7 @@ body main .container_contacto .contacto_saludo a i {
   -o-border-radius: 50px;
 }
 body main .container_contacto .contacto_saludo a i:hover {
-  background-color: #3dcfac;
+  background-color: #e28868;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -631,7 +629,7 @@ body main .container_contacto .contacto_saludo a i:hover {
   -webkit-animation: shake 0.4s;
 }
 body footer {
-  background-color: #e3ecdf;
+  background-color: #dfe0e0;
   grid-area: foot;
   position: fixed;
   width: 150px;
@@ -675,9 +673,9 @@ body footer div ul li {
   }
 }
 body footer div ul li a i {
-  color: #f1faee;
+  color: #edf2f4;
   font-size: 1.2rem;
-  background-color: #1d3557;
+  background-color: #212121;
   padding: 6px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -686,7 +684,7 @@ body footer div ul li a i {
   -o-border-radius: 50px;
 }
 body footer div ul li a i:hover {
-  background-color: #457b9d;
+  background-color: #d72638;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -703,11 +701,12 @@ body .goup {
   font-size: 2rem;
 }
 body .goup a i:hover {
-  color: #457b9d;
+  color: #d72638;
 }
 
 .tag {
   font-family: "Caveat", cursive;
+  color: #d72638;
 }
 
 .tag1 {
@@ -742,12 +741,12 @@ body .goup a i:hover {
   height: 0;
 }
 .switch input:checked + .slider {
-  background-color: #f1faee;
+  background-color: #edf2f4;
 }
 .switch input:checked + .slider:before {
   left: calc(100% - 1.2rem);
-  background-color: #f1faee;
-  box-shadow: inset -3px -2px 5px -2px #1d3557, inset -8px -4px 0 0 #1d3557;
+  background-color: #edf2f4;
+  box-shadow: inset -3px -2px 5px -2px #212121, inset -8px -4px 0 0 #212121;
 }
 .switch .slider {
   position: absolute;
@@ -756,7 +755,7 @@ body .goup a i:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1d3557;
+  background-color: #212121;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -785,7 +784,7 @@ body .goup a i:hover {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-  background-color: #f1faee;
+  background-color: #edf2f4;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -794,14 +793,14 @@ body .goup a i:hover {
 }
 
 .oscuro {
-  color: #f1faee;
-  background-color: #1d3557;
+  color: #edf2f4;
+  background-color: #212121;
 }
 .oscuro header {
-  background-color: #182d4a;
+  background-color: #121212;
 }
 .oscuro header nav {
-  background-color: #182d4a;
+  background-color: #121212;
 }
 .oscuro header nav .container-fluid .rl .divlogo {
   height: 100px;
@@ -816,63 +815,66 @@ body .goup a i:hover {
 .oscuro header nav .burga .hamburger .hamburger-inner,
 .oscuro header nav .burga .hamburger .hamburger-inner::after,
 .oscuro header nav .burga .hamburger .hamburger-inner::before {
-  background-color: #f1faee;
+  background-color: #edf2f4;
 }
 .oscuro header nav #offcanvasNavbar {
-  background-color: #182d4a;
+  background-color: #121212;
 }
 .oscuro header nav #offcanvasNavbar .offcanvas-body {
-  background-color: #182d4a;
+  background-color: #121212;
 }
 .oscuro header nav #offcanvasNavbar .offcanvas-body ul {
-  background-color: #182d4a;
+  background-color: #121212;
 }
 .oscuro header nav #offcanvasNavbar .offcanvas-body ul li a:hover {
-  color: #3dcfac;
+  color: #e28868;
+}
+.oscuro main .tag {
+  color: #e28868;
 }
 .oscuro main #sobremi h3 span {
-  color: #3dcfac;
+  color: #e28868;
 }
 .oscuro main .container_proyectos .proyectos .card_proyecto div {
-  background-color: #182d4a;
+  background-color: #121212;
 }
 .oscuro main .container_proyectos .proyectos .card_proyecto div a {
-  color: #1d3557;
-  background-color: #f1faee;
+  color: #212121;
+  background-color: #edf2f4;
 }
 .oscuro main .container_proyectos .proyectos .card_proyecto div a:hover {
-  background-color: #3dcfac;
+  background-color: #e28868;
 }
 .oscuro main .container_certificados .enlace a {
-  color: #1d3557;
-  background-color: #f1faee;
+  color: #212121;
+  background-color: #edf2f4;
 }
 .oscuro main .container_certificados .enlace a:hover {
-  background-color: #3dcfac;
+  background-color: #e28868;
 }
 .oscuro main .container_contacto .contacto_saludo {
-  background-color: #f1faee;
-  color: #1d3557;
+  background-color: #edf2f4;
+  color: #212121;
 }
 .oscuro main .container_contacto .contacto_saludo a i {
-  color: #f1faee;
-  background-color: #1d3557;
+  color: #edf2f4;
+  background-color: #212121;
 }
 .oscuro main .container_contacto .contacto_saludo a i:hover {
-  background-color: #457b9d;
+  background-color: #d72638;
 }
 .oscuro footer {
-  background-color: #182d4a;
+  background-color: #121212;
 }
 .oscuro footer div ul li a i {
-  color: #1d3557;
-  background-color: #f1faee;
+  color: #212121;
+  background-color: #edf2f4;
 }
 .oscuro footer div ul li a i:hover {
-  background-color: #3dcfac;
+  background-color: #e28868;
 }
 .oscuro .goup a i:hover {
-  color: #3dcfac;
+  color: #e28868;
 }
 
 .modal {
@@ -960,7 +962,7 @@ body .goup a i:hover {
   overflow: visible;
 }
 .hamburger:hover {
-  color: #457b9d;
+  color: #d72638;
 }
 .hamburger .hamburger-box {
   width: 40px;
@@ -983,7 +985,7 @@ body .goup a i:hover {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #1d3557;
+  background-color: #212121;
 }
 
 .hamburger-inner,
@@ -991,7 +993,7 @@ body .goup a i:hover {
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #1d3557;
+  background-color: #212121;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;

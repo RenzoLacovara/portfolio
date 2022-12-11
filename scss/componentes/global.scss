@@ -74,10 +74,6 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-            filter: sepia(8%) saturate(5015%) hue-rotate(278deg) brightness(33%)
-              contrast(90%);
-            -webkit-filter: sepia(8%) saturate(5015%) hue-rotate(278deg)
-              brightness(33%) contrast(90%);
 
             @media screen and (max-width: 768px) {
               margin-left: 15px;
@@ -680,6 +676,7 @@ body {
 
 .tag {
   font-family: "Caveat", cursive;
+  color: $color-detalle;
 }
 .tag1 {
   margin-left: 10px;
@@ -764,9 +761,9 @@ body {
   color: $color-principal;
   background-color: $color-secundario;
   header {
-    background-color: #182d4a;
+    background-color: $color-secundariod;
     nav {
-      background-color: #182d4a;
+      background-color: $color-secundariod;
       .container-fluid {
         .rl {
           .divlogo {
@@ -809,6 +806,9 @@ body {
     }
   }
   main {
+    .tag {
+      color: $color-detalled;
+    }
     #sobremi {
       h3 {
         span {
