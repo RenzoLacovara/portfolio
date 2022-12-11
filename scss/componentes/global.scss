@@ -581,7 +581,8 @@ body {
             -ms-border-radius: 50px;
             -o-border-radius: 50px;
             &:hover {
-              background-color: $color-detalled;
+              background-color: $color-detalle;
+              color: $color-principal;
               transform: scale(1.1);
               -webkit-transform: scale(1.1);
               -moz-transform: scale(1.1);
@@ -845,14 +846,15 @@ body {
     }
     .container_contacto {
       .contacto_saludo {
-        background-color: $color-principal;
+        background-color: $color-detalled;
         color: $color-secundario;
         a {
           i {
-            color: $color-principal;
-            background-color: $color-secundario;
+            color: $color-secundario;
+            background-color: $color-principal;
             &:hover {
-              background-color: $color-detalle;
+              background-color: $color-principal;
+              color: $color-detalled;
             }
           }
         }

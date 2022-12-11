@@ -619,7 +619,8 @@ body main .container_contacto .contacto_saludo a i {
   -o-border-radius: 50px;
 }
 body main .container_contacto .contacto_saludo a i:hover {
-  background-color: #e28868;
+  background-color: #d72638;
+  color: #edf2f4;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -853,15 +854,16 @@ body .goup a i:hover {
   background-color: #e28868;
 }
 .oscuro main .container_contacto .contacto_saludo {
-  background-color: #edf2f4;
+  background-color: #e28868;
   color: #212121;
 }
 .oscuro main .container_contacto .contacto_saludo a i {
-  color: #edf2f4;
-  background-color: #212121;
+  color: #212121;
+  background-color: #edf2f4;
 }
 .oscuro main .container_contacto .contacto_saludo a i:hover {
-  background-color: #d72638;
+  background-color: #edf2f4;
+  color: #e28868;
 }
 .oscuro footer {
   background-color: #121212;
