@@ -845,6 +845,7 @@ body .goup a i:hover {
 }
 .oscuro main .container_proyectos .proyectos .card_proyecto div a:hover {
   background-color: #e28868;
+  color: #edf2f4;
 }
 .oscuro main .container_certificados .enlace a {
   color: #212121;

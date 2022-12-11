@@ -827,6 +827,7 @@ body {
               background-color: $color-principal;
               &:hover {
                 background-color: $color-detalled;
+                color: $color-principal;
               }
             }
           }
