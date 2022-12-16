@@ -429,9 +429,9 @@ body {
           grid-template-columns: repeat (1fr, 2);
           grid-template-rows: repeat (1fr, 5);
           grid-template-areas:
-            "cer1 cer2"
+            "cer2 cer1"
             "cer3 cer4"
-            "cer5 cer6"
+            "cer6 cer5"
             "cer7 cer8"
             "cer9 cer9";
         }
