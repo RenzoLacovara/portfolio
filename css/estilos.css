@@ -340,6 +340,13 @@ body main .container_proyectos .proyectos .card_proyecto {
     height: 450px;
   }
 }
+body main .container_proyectos .proyectos .card_proyecto .div_repo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  padding: 0;
+}
 body main .container_proyectos .proyectos .card_proyecto .imagen {
   height: auto;
   width: 70%;
@@ -429,8 +436,7 @@ body main .container_proyectos .proyectos .card_proyecto div .herr .tail {
   background-color: #1bb5b9;
 }
 body main .container_proyectos .proyectos .card_proyecto div .link_sitio {
-  padding: 10px 10px;
-  width: 110px;
+  padding: 8px 16px;
   color: white;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -439,6 +445,10 @@ body main .container_proyectos .proyectos .card_proyecto div .link_sitio {
   -o-border-radius: 50px;
   background-color: #212121;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 body main .container_proyectos .proyectos .card_proyecto div .link_sitio:hover {
   background-color: #d72638;
