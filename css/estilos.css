@@ -420,7 +420,7 @@ body main .container_proyectos .proyectos .card_proyecto div .herr {
 }
 body main .container_proyectos .proyectos .card_proyecto div .herr p {
   font-size: 0.7rem;
-  padding: 2px 5px;
+  padding: 4px 7px 2px;
   color: white;
   border-radius: 20px;
   -webkit-border-radius: 20px;
