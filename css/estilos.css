@@ -267,7 +267,7 @@ body main .container_intro h1 {
   }
 }
 body main .container_intro h3 {
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 2rem;
 }
 body main .container_intro h3 span {
@@ -279,7 +279,7 @@ body main .container_intro h3 span {
   }
 }
 body main .container_sobremi {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
 }
 body main .container_sobremi h2 {
@@ -299,6 +299,21 @@ body main .container_sobremi .sobremi_p {
     font-size: 0.9rem;
     margin: 0px 10%;
   }
+}
+body main .container_sobremi .link_cv {
+  margin: 0px 10px;
+  padding: 8px 16px;
+  color: #212121;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: #dfe0e0;
+  text-decoration: none;
+}
+body main .container_sobremi .link_cv:hover {
+  color: #d72638;
 }
 body main .container_proyectos {
   margin-top: 60px;
@@ -854,6 +869,13 @@ body .goup a i:hover {
   color: #e28868;
 }
 .oscuro main #sobremi h3 span {
+  color: #e28868;
+}
+.oscuro main .container_sobremi .link_cv {
+  color: #edf2f4;
+  background-color: #121212;
+}
+.oscuro main .container_sobremi .link_cv:hover {
   color: #e28868;
 }
 .oscuro main .container_proyectos .proyectos .card_proyecto div {
