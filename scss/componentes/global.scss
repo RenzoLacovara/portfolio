@@ -228,6 +228,22 @@ body {
     }
     .container_intro {
       padding-top: 30px;
+      .namee {
+        position: relative;
+        color: transparent;
+        -webkit-text-stroke: 1px $color-secundario;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        &:hover {
+          color: $color-secundario;
+          -webkit-text-stroke: $color-principal;
+          text-shadow: 3px 3px 0px $color-detalle, 6px 6px 0px $color-principald;
+        }
+      }
+
       .titulo {
         padding-top: 30px;
       }
@@ -253,6 +269,16 @@ body {
       margin-top: 30px;
       width: 100%;
 
+      .name {
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        &:hover {
+          text-shadow: 3px 3px 0px $color-detalle, 6px 6px 0px $color-principald;
+        }
+      }
       h2 {
         font-size: 2.5rem;
         @media screen and (max-width: 550px) {
@@ -286,6 +312,17 @@ body {
     .container_proyectos {
       margin-top: 60px;
       h2 {
+        .name {
+          transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          &:hover {
+            text-shadow: 3px 3px 0px $color-detalle,
+              6px 6px 0px $color-principald;
+          }
+        }
         font-size: 2.5rem;
         @media screen and (max-width: 550px) {
           font-size: 1.6rem;
@@ -303,8 +340,8 @@ body {
         .card_proyecto {
           display: flex;
           height: 400px;
-          margin: 30px 5%;
-          width: 90%;
+          margin: 30px auto;
+          max-width: 900px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
             rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
           border-radius: 25px;
@@ -313,9 +350,10 @@ body {
           -ms-border-radius: 25px;
           -o-border-radius: 25px;
           overflow: hidden;
-          @media screen and (max-width: 700px) {
+          @media screen and (max-width: 1232px) {
             flex-direction: column;
-            height: 450px;
+            height: 500px;
+            margin: 30px 5%;
           }
           .div_repo {
             display: flex;
@@ -326,15 +364,15 @@ body {
           }
           .imagen {
             height: auto;
-            width: 70%;
+            width: 65%;
             object-fit: cover;
             cursor: zoom-in;
             transition: 0.3s;
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 1232px) {
               width: 100%;
               height: 65%;
             }
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 1232px) {
               height: 45%;
             }
             &:hover {
@@ -344,17 +382,17 @@ body {
           div {
             background-color: $color-principald;
             padding: 25px 15px;
-            width: 30%;
+            width: 35%;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 1232px) {
               width: 100%;
               height: 35%;
             }
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 1232px) {
               height: 55%;
             }
             .herr {
@@ -382,6 +420,9 @@ body {
               }
               .html {
                 background-color: #e54d26;
+              }
+              .firebase {
+                background-color: #ffa714;
               }
               .css {
                 background-color: #0170ba;
@@ -429,6 +470,17 @@ body {
     .container_certificados {
       margin-top: 60px;
       h2 {
+        .name {
+          transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          &:hover {
+            text-shadow: 3px 3px 0px $color-detalle,
+              6px 6px 0px $color-principald;
+          }
+        }
         font-size: 2.5rem;
         @media screen and (max-width: 550px) {
           font-size: 1.6rem;
@@ -445,7 +497,8 @@ body {
       .certificados {
         display: grid;
         justify-items: center;
-        margin: 0px 10%;
+        align-content: center;
+        margin: 0px 17%;
         grid-template-columns: repeat (1fr, 3);
         grid-template-rows: repeat (1fr, 3);
         grid-template-areas:
@@ -453,6 +506,7 @@ body {
           "cer4 cer5 cer6"
           "cer7 cer8 cer9";
         @media screen and (max-width: 1250px) {
+          margin: 0px 15%;
           grid-template-columns: repeat (1fr, 2);
           grid-template-rows: repeat (1fr, 5);
           grid-template-areas:
@@ -463,6 +517,7 @@ body {
             "cer9 cer9";
         }
         @media screen and (max-width: 872px) {
+          margin: 0px 5%;
           grid-template-columns: 1fr;
           grid-template-rows: repeat (1fr, 9);
           grid-template-areas:
@@ -507,7 +562,7 @@ body {
           box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
             rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
           margin: 10px;
-          width: 300px;
+          width: 220px;
           object-fit: cover;
           cursor: zoom-in;
           transition: 0.3s;
@@ -524,37 +579,82 @@ body {
           }
         }
       }
-      .tools {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        img {
-          margin: 10px;
-          filter: grayscale(0.8);
-          height: 100px;
-          width: 100px;
-          object-fit: contain;
-          -webkit-filter: grayscale(0.8);
-          transition: 0.4s;
-          -webkit-transition: 0.4s;
-          -moz-transition: 0.4s;
-          -ms-transition: 0.4s;
-          -o-transition: 0.4s;
-          @media screen and (max-width: 768px) {
-            filter: grayscale(0);
-            -webkit-filter: grayscale(0);
+      #tools {
+        width: 100%;
+        .stack-div {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media screen and (max-width: 1198px) {
+            flex-direction: column;
           }
-          &:hover {
-            filter: grayscale(0);
-            -webkit-filter: grayscale(0);
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            animation: shake 0.4s;
-            -webkit-animation: shake 0.4s;
+
+          .tools {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+
+            @media screen and (max-width: 1198px) {
+              margin: 0px 5%;
+              width: 90%;
+            }
+            .stack-title {
+              display: flex;
+              gap: 8px;
+              p {
+                padding-top: 6px;
+              }
+            }
+            .stack {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+            }
+            h2 {
+              .name {
+                transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                &:hover {
+                  text-shadow: 3px 3px 0px $color-detalle,
+                    6px 6px 0px $color-principald;
+                }
+              }
+            }
+            img {
+              margin: 10px;
+              filter: grayscale(0.8);
+              height: 80px;
+              width: 80px;
+              object-fit: contain;
+              -webkit-filter: grayscale(0.8);
+              transition: 0.4s;
+              -webkit-transition: 0.4s;
+              -moz-transition: 0.4s;
+              -ms-transition: 0.4s;
+              -o-transition: 0.4s;
+              @media screen and (max-width: 768px) {
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
+              }
+              &:hover {
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                animation: shake 0.4s;
+                -webkit-animation: shake 0.4s;
+              }
+            }
           }
         }
       }
@@ -846,6 +946,16 @@ body {
       color: $color-detalled;
     }
     #sobremi {
+      .namee {
+        -webkit-text-stroke: 1px $color-principal;
+        &:hover {
+          color: $color-principal;
+          -webkit-text-stroke: $color-secundariod;
+          text-shadow: 3px 3px 0px $color-detalled,
+            6px 6px 0px $color-secundariod;
+        }
+      }
+
       h3 {
         span {
           color: $color-detalled;
@@ -853,6 +963,19 @@ body {
       }
     }
     .container_sobremi {
+      h2 {
+        .name {
+          transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          &:hover {
+            text-shadow: 3px 3px 0px $color-detalled,
+              6px 6px 0px $color-secundariod;
+          }
+        }
+      }
       .link_cv {
         color: $color-principal;
         background-color: $color-secundariod;
@@ -862,6 +985,19 @@ body {
       }
     }
     .container_proyectos {
+      h2 {
+        .name {
+          transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          &:hover {
+            text-shadow: 3px 3px 0px $color-detalled,
+              6px 6px 0px $color-secundariod;
+          }
+        }
+      }
       .proyectos {
         .card_proyecto {
           div {
@@ -879,12 +1015,40 @@ body {
       }
     }
     .container_certificados {
+      h2 {
+        .name {
+          transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          &:hover {
+            text-shadow: 3px 3px 0px $color-detalled,
+              6px 6px 0px $color-secundariod;
+          }
+        }
+      }
       .enlace {
         a {
           color: $color-secundario;
           background-color: $color-principal;
           &:hover {
             background-color: $color-detalled;
+          }
+        }
+      }
+    }
+    .tools {
+      h2 {
+        .name {
+          transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          &:hover {
+            text-shadow: 3px 3px 0px $color-detalled,
+              6px 6px 0px $color-secundariod;
           }
         }
       }
@@ -1111,7 +1275,7 @@ body {
     opacity: 100;
   }
 }
-.tools div p {
+.tools .stack div p {
   opacity: 0;
   text-align: center;
   transition: 0.4s;
@@ -1121,6 +1285,55 @@ body {
   -o-transition: 0.4s;
   margin-top: 20px;
 }
-.tools div:hover p {
+.tools .stack div:hover p {
   opacity: 100;
+}
+p::selection,
+i::selection,
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+a::selection {
+  text-shadow: none;
+  background-color: $color-detalle;
+  color: $color-principal;
+}
+.oscuro {
+  p::selection,
+  i::selection,
+  span::selection,
+  h1::selection,
+  h2::selection,
+  h3::selection,
+  h4::selection,
+  a::selection {
+    text-shadow: none;
+    background-color: $color-detalled;
+    color: $color-secundariod;
+  }
+}
+.reveal {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+  -webkit-transform: translateX(-150px);
+  -moz-transform: translateX(-150px);
+  -ms-transform: translateX(-150px);
+  -o-transform: translateX(-150px);
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
 }
