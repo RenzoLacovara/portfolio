@@ -25,6 +25,7 @@ body header {
   height: 66vh;
   width: 150px;
   background-color: #dfe0e0;
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   body header {
@@ -193,12 +194,12 @@ body header nav .container-fluid .offcanvas .offcanvas-body ul {
 }
 @media screen and (max-width: 768px) {
   body header nav .container-fluid .offcanvas .offcanvas-body ul #link4 {
-    padding-right: 100px;
+    padding-right: 120px;
   }
 }
 @media only screen and (max-width: 410px) {
   body header nav .container-fluid .offcanvas .offcanvas-body ul #link4 {
-    padding-right: 80px;
+    padding-right: 90px;
   }
 }
 @media screen and (max-width: 768px) {

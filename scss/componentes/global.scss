@@ -28,6 +28,7 @@ body {
     height: 66vh;
     width: 150px;
     background-color: $color-principald;
+    z-index: 10;
 
     @media screen and (max-width: 768px) {
       height: 100px;
@@ -165,10 +166,10 @@ body {
               }
               #link4 {
                 @media screen and (max-width: 768px) {
-                  padding-right: 100px;
+                  padding-right: 120px;
                 }
                 @media only screen and (max-width: 410px) {
-                  padding-right: 80px;
+                  padding-right: 90px;
                 }
               }
               #link5 {
