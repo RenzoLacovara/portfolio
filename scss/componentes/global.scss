@@ -8,8 +8,8 @@ body {
     "navv body"
     "navv body"
     "foot body";
-  background-color: $color-principal;
-  color: $color-secundario;
+  background-color: $color-secundario;
+  color: $color-principal;
   font-family: "Josefin Sans", sans-serif;
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -27,7 +27,7 @@ body {
     position: fixed;
     height: 66vh;
     width: 150px;
-    background-color: $color-principald;
+    background-color: $color-secundariod;
     z-index: 10;
 
     @media screen and (max-width: 768px) {
@@ -36,7 +36,7 @@ body {
       position: initial;
     }
     nav {
-      background-color: $color-principald;
+      background-color: $color-secundariod;
       .container-fluid {
         height: 66vh;
         display: flex;
@@ -53,19 +53,10 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          gap: 10px;
           @media screen and (max-width: 768px) {
             height: 100px;
             flex-direction: row;
-          }
-          .switch {
-            @media screen and (max-width: 768px) {
-              margin: auto;
-              transform: rotate(90deg);
-              -webkit-transform: rotate(90deg);
-              -moz-transform: rotate(90deg);
-              -ms-transform: rotate(90deg);
-              -o-transform: rotate(90deg);
-            }
           }
 
           .divlogo {
@@ -75,6 +66,18 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            filter: invert(97%);
+
+            &:hover {
+              background-image: url(../Imagenes/yo3.png);
+              animation: shake 0.4s;
+              -webkit-animation: shake 0.4s;
+            }
 
             @media screen and (max-width: 768px) {
               margin-left: 15px;
@@ -116,7 +119,7 @@ body {
           @media screen and (max-width: 768px) {
             height: 350px;
             width: 350px;
-            background-color: $color-principald;
+            background-color: $color-secundariod;
             -webkit-border-radius: 0px 0px 0px 100%;
             overflow: hidden;
             align-items: flex-end;
@@ -174,10 +177,10 @@ body {
               }
               #link5 {
                 @media screen and (max-width: 768px) {
-                  padding-right: 30px;
+                  padding-right: 40px;
                 }
                 @media only screen and (max-width: 410px) {
-                  padding-right: 20px;
+                  padding-right: 30px;
                 }
               }
               #link1,
@@ -207,7 +210,7 @@ body {
                     font-size: 0.8rem;
                   }
                   &:hover {
-                    color: $color-detalle;
+                    color: $color-detalled;
                   }
                 }
               }
@@ -232,16 +235,17 @@ body {
       .namee {
         position: relative;
         color: transparent;
-        -webkit-text-stroke: 1px $color-secundario;
+        -webkit-text-stroke: 1px $color-principal;
         transition: all 0.5s;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
         &:hover {
-          color: $color-secundario;
-          -webkit-text-stroke: $color-principal;
-          text-shadow: 3px 3px 0px $color-detalle, 6px 6px 0px $color-principald;
+          color: $color-principal;
+          -webkit-text-stroke: $color-secundariod;
+          text-shadow: 3px 3px 0px $color-detalled,
+            6px 6px 0px $color-secundariod;
         }
       }
 
@@ -259,7 +263,7 @@ body {
         margin-top: 10px;
         font-size: 2rem;
         span {
-          color: $color-detalle;
+          color: $color-detalled;
         }
         @media screen and (max-width: 550px) {
           font-size: 1.2rem;
@@ -277,7 +281,8 @@ body {
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         &:hover {
-          text-shadow: 3px 3px 0px $color-detalle, 6px 6px 0px $color-principald;
+          text-shadow: 3px 3px 0px $color-detalled,
+            6px 6px 0px $color-secundariod;
         }
       }
       h2 {
@@ -297,16 +302,16 @@ body {
       .link_cv {
         margin: 0px 10px;
         padding: 8px 16px;
-        color: $color-secundario;
+        color: $color-principal;
         border-radius: 50px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
-        background-color: $color-principald;
+        background-color: $color-secundariod;
         text-decoration: none;
         &:hover {
-          color: $color-detalle;
+          color: $color-detalled;
         }
       }
     }
@@ -320,8 +325,8 @@ body {
           -ms-transition: all 0.5s ease;
           -o-transition: all 0.5s ease;
           &:hover {
-            text-shadow: 3px 3px 0px $color-detalle,
-              6px 6px 0px $color-principald;
+            text-shadow: 3px 3px 0px $color-detalled,
+              6px 6px 0px $color-secundariod;
           }
         }
         font-size: 2.5rem;
@@ -381,7 +386,7 @@ body {
             }
           }
           div {
-            background-color: $color-principald;
+            background-color: $color-secundariod;
             padding: 25px 15px;
             width: 35%;
             text-align: center;
@@ -435,7 +440,7 @@ body {
                 background-color: #7911f7;
               }
               .java {
-                background-color: #ebcb32;
+                background-color: #d5b92d;
               }
               .react {
                 background-color: #61dafb;
@@ -447,13 +452,13 @@ body {
 
             .link_sitio {
               padding: 8px 16px;
-              color: white;
+              color: $color-secundario;
               border-radius: 50px;
               -webkit-border-radius: 50px;
               -moz-border-radius: 50px;
               -ms-border-radius: 50px;
               -o-border-radius: 50px;
-              background-color: $color-secundario;
+              background-color: $color-principal;
               text-decoration: none;
               display: flex;
               justify-content: center;
@@ -461,7 +466,8 @@ body {
               gap: 4px;
 
               &:hover {
-                background-color: $color-detalle;
+                background-color: $color-detalled;
+                color: $color-principal;
               }
             }
           }
@@ -478,8 +484,8 @@ body {
           -ms-transition: all 0.5s ease;
           -o-transition: all 0.5s ease;
           &:hover {
-            text-shadow: 3px 3px 0px $color-detalle,
-              6px 6px 0px $color-principald;
+            text-shadow: 3px 3px 0px $color-detalled,
+              6px 6px 0px $color-secundariod;
           }
         }
         font-size: 2.5rem;
@@ -623,8 +629,8 @@ body {
                 -ms-transition: all 0.5s ease;
                 -o-transition: all 0.5s ease;
                 &:hover {
-                  text-shadow: 3px 3px 0px $color-detalle,
-                    6px 6px 0px $color-principald;
+                  text-shadow: 3px 3px 0px $color-detalled,
+                    6px 6px 0px $color-secundariod;
                 }
               }
             }
@@ -667,16 +673,16 @@ body {
           text-align: center;
           padding: 10px 10px;
           width: 110px;
-          color: white;
+          color: $color-secundario;
           border-radius: 50px;
           -webkit-border-radius: 50px;
           -moz-border-radius: 50px;
           -ms-border-radius: 50px;
           -o-border-radius: 50px;
-          background-color: $color-secundario;
+          background-color: $color-principal;
           text-decoration: none;
           &:hover {
-            background-color: $color-detalle;
+            background-color: $color-detalled;
           }
         }
       }
@@ -699,8 +705,8 @@ body {
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
-        background-color: $color-secundario;
-        color: $color-principal;
+        background-color: $color-detalled;
+        color: $color-secundario;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
           rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
         margin-bottom: 60px;
@@ -717,8 +723,8 @@ body {
             -ms-border-radius: 50px;
             -o-border-radius: 50px;
             &:hover {
-              background-color: $color-detalle;
-              color: $color-principal;
+              background-color: $color-principal;
+              color: $color-detalled;
               transform: scale(1.1);
               -webkit-transform: scale(1.1);
               -moz-transform: scale(1.1);
@@ -733,7 +739,7 @@ body {
     }
   }
   footer {
-    background-color: $color-principald;
+    background-color: $color-secundariod;
     grid-area: foot;
     position: fixed;
     width: 150px;
@@ -770,9 +776,9 @@ body {
           }
           a {
             i {
-              color: $color-principal;
+              color: $color-secundario;
               font-size: 1.2rem;
-              background-color: $color-secundario;
+              background-color: $color-principal;
               padding: 6px;
               border-radius: 50px;
               -webkit-border-radius: 50px;
@@ -780,7 +786,7 @@ body {
               -ms-border-radius: 50px;
               -o-border-radius: 50px;
               &:hover {
-                background-color: $color-detalle;
+                background-color: $color-detalled;
                 transform: scale(1.1);
                 -webkit-transform: scale(1.1);
                 -moz-transform: scale(1.1);
@@ -801,10 +807,15 @@ body {
     right: 20px;
     cursor: pointer;
     font-size: 2rem;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
     a {
       i {
         &:hover {
-          color: $color-detalle;
+          color: $color-detalled;
         }
       }
     }
@@ -813,7 +824,7 @@ body {
 
 .tag {
   font-family: "Caveat", cursive;
-  color: $color-detalle;
+  color: $color-detalled;
 }
 .tag1 {
   margin-left: 10px;
@@ -829,275 +840,6 @@ body {
 }
 .tagup {
   vertical-align: top;
-}
-.switch {
-  margin-top: 10px;
-  position: relative;
-  width: 2.5rem;
-  height: 1.2rem;
-  input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    &:checked + .slider {
-      background-color: $color-principal;
-    }
-    &:checked + .slider:before {
-      left: calc(100% - 1.2rem);
-      background-color: $color-principal;
-      box-shadow: inset -3px -2px 5px -2px $color-secundario,
-        inset -8px -4px 0 0 $color-secundario;
-    }
-  }
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $color-secundario;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-    &:before {
-      position: absolute;
-      content: "";
-      height: 1rem;
-      width: 1rem;
-      border-radius: 20px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-      -o-border-radius: 20px;
-      left: 0.3rem;
-      top: 50%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      background-color: $color-principal;
-      transition: 0.4s;
-      -webkit-transition: 0.4s;
-      -moz-transition: 0.4s;
-      -ms-transition: 0.4s;
-      -o-transition: 0.4s;
-    }
-  }
-}
-
-.oscuro {
-  color: $color-principal;
-  background-color: $color-secundario;
-  header {
-    background-color: $color-secundariod;
-    nav {
-      background-color: $color-secundariod;
-      .container-fluid {
-        .rl {
-          .divlogo {
-            height: 100px;
-            width: 100px;
-            background-image: url(../Imagenes/yo2.png);
-            filter: invert(97%);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            -webkit-filter: invert(97%);
-          }
-        }
-      }
-      .burga {
-        .hamburger {
-          .hamburger-inner,
-          .hamburger-inner::after,
-          .hamburger-inner::before {
-            background-color: $color-principal;
-          }
-        }
-      }
-      #offcanvasNavbar {
-        background-color: $color-secundariod;
-        .offcanvas-body {
-          background-color: $color-secundariod;
-          ul {
-            background-color: $color-secundariod;
-            li {
-              a {
-                &:hover {
-                  color: $color-detalled;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  main {
-    .tag {
-      color: $color-detalled;
-    }
-    #sobremi {
-      .namee {
-        -webkit-text-stroke: 1px $color-principal;
-        &:hover {
-          color: $color-principal;
-          -webkit-text-stroke: $color-secundariod;
-          text-shadow: 3px 3px 0px $color-detalled,
-            6px 6px 0px $color-secundariod;
-        }
-      }
-
-      h3 {
-        span {
-          color: $color-detalled;
-        }
-      }
-    }
-    .container_sobremi {
-      h2 {
-        .name {
-          transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-          -ms-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          &:hover {
-            text-shadow: 3px 3px 0px $color-detalled,
-              6px 6px 0px $color-secundariod;
-          }
-        }
-      }
-      .link_cv {
-        color: $color-principal;
-        background-color: $color-secundariod;
-        &:hover {
-          color: $color-detalled;
-        }
-      }
-    }
-    .container_proyectos {
-      h2 {
-        .name {
-          transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-          -ms-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          &:hover {
-            text-shadow: 3px 3px 0px $color-detalled,
-              6px 6px 0px $color-secundariod;
-          }
-        }
-      }
-      .proyectos {
-        .card_proyecto {
-          div {
-            background-color: $color-secundariod;
-            a {
-              color: $color-secundario;
-              background-color: $color-principal;
-              &:hover {
-                background-color: $color-detalled;
-                color: $color-principal;
-              }
-            }
-          }
-        }
-      }
-    }
-    .container_certificados {
-      h2 {
-        .name {
-          transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-          -ms-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          &:hover {
-            text-shadow: 3px 3px 0px $color-detalled,
-              6px 6px 0px $color-secundariod;
-          }
-        }
-      }
-      .enlace {
-        a {
-          color: $color-secundario;
-          background-color: $color-principal;
-          &:hover {
-            background-color: $color-detalled;
-          }
-        }
-      }
-    }
-    .tools {
-      h2 {
-        .name {
-          transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-          -ms-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          &:hover {
-            text-shadow: 3px 3px 0px $color-detalled,
-              6px 6px 0px $color-secundariod;
-          }
-        }
-      }
-    }
-    .container_contacto {
-      .contacto_saludo {
-        background-color: $color-detalled;
-        color: $color-secundario;
-        a {
-          i {
-            color: $color-secundario;
-            background-color: $color-principal;
-            &:hover {
-              background-color: $color-principal;
-              color: $color-detalled;
-            }
-          }
-        }
-      }
-    }
-  }
-  footer {
-    background-color: $color-secundariod;
-    div {
-      ul {
-        li {
-          a {
-            i {
-              color: $color-secundario;
-              background-color: $color-principal;
-              &:hover {
-                background-color: $color-detalled;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .goup {
-    a {
-      i {
-        &:hover {
-          color: $color-detalled;
-        }
-      }
-    }
-  }
 }
 .modal {
   display: none;
@@ -1184,7 +926,7 @@ body {
   margin: 0;
   overflow: visible;
   &:hover {
-    color: $color-detalle;
+    color: $color-detalled;
   }
   .hamburger-box {
     width: 40px;
@@ -1206,14 +948,14 @@ body {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: $color-secundario;
+  background-color: $color-principal;
 }
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: $color-secundario;
+  background-color: $color-principald;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -1260,22 +1002,7 @@ body {
   transition: bottom 0.1s ease-out,
     transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.visible {
-  visibility: visible;
-  animation: visible 0.4s;
-  -webkit-animation: visible 0.4s;
-}
-.hidd {
-  visibility: hidden;
-}
-@keyframes visible {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
-  }
-}
+
 .tools .stack div p {
   opacity: 0;
   text-align: center;
@@ -1298,23 +1025,10 @@ h3::selection,
 h4::selection,
 a::selection {
   text-shadow: none;
-  background-color: $color-detalle;
-  color: $color-principal;
+  background-color: $color-detalled;
+  color: $color-secundariod;
 }
-.oscuro {
-  p::selection,
-  i::selection,
-  span::selection,
-  h1::selection,
-  h2::selection,
-  h3::selection,
-  h4::selection,
-  a::selection {
-    text-shadow: none;
-    background-color: $color-detalled;
-    color: $color-secundariod;
-  }
-}
+
 .reveal {
   position: relative;
   transform: translateX(-150px);

@@ -31,12 +31,6 @@
     <title>&ltRenzo Lacovara/&gt</title>
   </head>
   <body>
-    <script>
-      const selectedTheme = localStorage.getItem("theme");
-      document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-        "oscuro"
-      );
-    </script>
     <header class="header">
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
@@ -45,10 +39,6 @@
               <a class="logo navbar-brand" href="./index.html" name="inicio"></a>
             </div>
             <p>&ltFront-End Dev/&gt</p>
-            <label class="switch">
-              <input type="checkbox" id="mode" />
-              <span class="slider"></span>
-            </label>
           </div>
           <div class="burga" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
