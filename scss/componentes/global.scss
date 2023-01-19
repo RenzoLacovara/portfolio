@@ -1033,6 +1033,7 @@ a::selection {
   position: relative;
   transform: translateX(-150px);
   opacity: 0;
+  filter: blur(4px);
   transition: 1s all ease;
   -webkit-transform: translateX(-150px);
   -moz-transform: translateX(-150px);
@@ -1042,13 +1043,16 @@ a::selection {
   -moz-transition: 1s all ease;
   -ms-transition: 1s all ease;
   -o-transition: 1s all ease;
+  -webkit-filter: blur(4px);
 }
 
 .reveal.active {
+  filter: blur(0);
   transform: translateX(0);
   opacity: 1;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
+  -webkit-filter: blur(0);
 }
