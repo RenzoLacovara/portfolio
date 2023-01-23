@@ -593,21 +593,16 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          @media screen and (max-width: 1198px) {
-            flex-direction: column;
-          }
+          flex-direction: column;
 
           .tools {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 40%;
+            margin: 0px 5%;
+            width: 90%;
 
-            @media screen and (max-width: 1198px) {
-              margin: 0px 5%;
-              width: 90%;
-            }
             .stack-title {
               display: flex;
               gap: 8px;

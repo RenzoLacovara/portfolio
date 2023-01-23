@@ -623,24 +623,15 @@ body main .container_certificados #tools .stack-div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media screen and (max-width: 1198px) {
-  body main .container_certificados #tools .stack-div {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 body main .container_certificados #tools .stack-div .tools {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
-}
-@media screen and (max-width: 1198px) {
-  body main .container_certificados #tools .stack-div .tools {
-    margin: 0px 5%;
-    width: 90%;
-  }
+  margin: 0px 5%;
+  width: 90%;
 }
 body main .container_certificados #tools .stack-div .tools .stack-title {
   display: flex;
