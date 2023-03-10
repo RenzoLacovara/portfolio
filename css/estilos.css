@@ -512,7 +512,11 @@ body main .container_proyectos .proyectos .card_proyecto div .link_sitio:hover {
   color: #edf2f4;
 }
 body main .container_certificados {
-  margin-top: 60px;
+  background-color: #e28868;
+  padding: 60px 0px 20px;
+}
+body main .container_certificados .tag {
+  color: #121212;
 }
 body main .container_certificados h2 {
   font-size: 2.5rem;
@@ -525,7 +529,7 @@ body main .container_certificados h2 .name {
   -o-transition: all 0.5s ease;
 }
 body main .container_certificados h2 .name:hover {
-  text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
+  text-shadow: 3px 3px 0px #e54d26, 6px 6px 0px #121212;
 }
 @media screen and (max-width: 550px) {
   body main .container_certificados h2 {
@@ -615,17 +619,20 @@ body main .container_certificados .certificados img:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-body main .container_certificados #tools {
+body main #tools {
+  margin-top: 50px;
   width: 100%;
+  background-image: url("../Imagenes/dots.svg");
+  background-size: contain;
 }
-body main .container_certificados #tools .stack-div {
+body main #tools .stack-div {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-body main .container_certificados #tools .stack-div .tools {
+body main #tools .stack-div .tools {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -633,20 +640,20 @@ body main .container_certificados #tools .stack-div .tools {
   margin: 0px 5%;
   width: 90%;
 }
-body main .container_certificados #tools .stack-div .tools .stack-title {
+body main #tools .stack-div .tools .stack-title {
   display: flex;
   gap: 8px;
 }
-body main .container_certificados #tools .stack-div .tools .stack-title p {
+body main #tools .stack-div .tools .stack-title p {
   padding-top: 6px;
 }
-body main .container_certificados #tools .stack-div .tools .stack {
+body main #tools .stack-div .tools .stack {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-body main .container_certificados #tools .stack-div .tools .stack:hover > :not(:hover) {
+body main #tools .stack-div .tools .stack:hover > :not(:hover) {
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -656,17 +663,17 @@ body main .container_certificados #tools .stack-div .tools .stack:hover > :not(:
   -webkit-filter: grayscale(0.8);
   opacity: 0.5;
 }
-body main .container_certificados #tools .stack-div .tools h2 .name {
+body main #tools .stack-div .tools h2 .name {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-body main .container_certificados #tools .stack-div .tools h2 .name:hover {
+body main #tools .stack-div .tools h2 .name:hover {
   text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
 }
-body main .container_certificados #tools .stack-div .tools img {
+body main #tools .stack-div .tools img {
   margin: 10px;
   height: 80px;
   width: 80px;
@@ -677,7 +684,7 @@ body main .container_certificados #tools .stack-div .tools img {
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
 }
-body main .container_certificados #tools .stack-div .tools img:hover {
+body main #tools .stack-div .tools img:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -686,12 +693,12 @@ body main .container_certificados #tools .stack-div .tools img:hover {
   animation: shake 0.4s;
   -webkit-animation: shake 0.4s;
 }
-body main .container_certificados .enlace {
+body main .enlace {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
-body main .container_certificados .enlace a {
+body main .enlace a {
   text-align: center;
   padding: 10px 10px;
   width: 110px;
@@ -703,8 +710,13 @@ body main .container_certificados .enlace a {
   -o-border-radius: 50px;
   background-color: #edf2f4;
   text-decoration: none;
+  transition: 0.2s linear all;
+  -webkit-transition: 0.2s linear all;
+  -moz-transition: 0.2s linear all;
+  -ms-transition: 0.2s linear all;
+  -o-transition: 0.2s linear all;
 }
-body main .container_certificados .enlace a:hover {
+body main .enlace a:hover {
   background-color: #e28868;
 }
 body main .container_contacto {
@@ -836,6 +848,15 @@ body .goup a i:hover {
   color: #e28868;
 }
 
+#certificados .enlace a {
+  color: #212121;
+  background-color: #edf2f4;
+}
+#certificados .enlace a:hover {
+  background-color: #e54d26;
+  color: #edf2f4;
+}
+
 .tag {
   font-family: "Caveat", cursive;
   color: #e28868;
@@ -927,6 +948,12 @@ body .goup a i:hover {
     -moz-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     -o-transform: rotate(15deg);
+  }
+}
+@keyframes spin {
+  50% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(180deg);
+    transform: translate3d(-50%, -50%, 0) rotate(180deg);
   }
 }
 .hamburger {
@@ -1080,6 +1107,100 @@ a::selection {
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
+}
+
+.reveal2 {
+  position: relative;
+  opacity: 0;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  transform: perspective(2500px) rotateX(-100deg);
+  -webkit-transform: perspective(2500px) rotateX(-100deg);
+  -moz-transform: perspective(2500px) rotateX(-100deg);
+  -ms-transform: perspective(2500px) rotateX(-100deg);
+  -o-transform: perspective(2500px) rotateX(-100deg);
+}
+
+.reveal2.active {
+  opacity: 1;
+  transform: perspective(2500px) rotateX(0deg);
+  -webkit-transform: perspective(2500px) rotateX(0deg);
+  -moz-transform: perspective(2500px) rotateX(0deg);
+  -ms-transform: perspective(2500px) rotateX(0deg);
+  -o-transform: perspective(2500px) rotateX(0deg);
+}
+
+.wavesss {
+  height: 108px;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: #e28868;
+}
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+}
+.wave1 {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=estilos.css.map */
