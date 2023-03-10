@@ -6,6 +6,9 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "navv body" "navv body" "foot body";
   background-color: #212121;
+  background-image: url("../Imagenes/dots.svg");
+  background-size: contain;
+  background-repeat: repeat;
   color: #edf2f4;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -622,8 +625,7 @@ body main .container_certificados .certificados img:hover {
 body main #tools {
   margin-top: 50px;
   width: 100%;
-  background-image: url("../Imagenes/dots.svg");
-  background-size: contain;
+  overflow: hidden;
 }
 body main #tools .stack-div {
   width: 100%;
@@ -885,7 +887,7 @@ body .goup a i:hover {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -948,12 +950,6 @@ body .goup a i:hover {
     -moz-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     -o-transform: rotate(15deg);
-  }
-}
-@keyframes spin {
-  50% {
-    -webkit-transform: translate3d(-50%, -50%, 0) rotate(180deg);
-    transform: translate3d(-50%, -50%, 0) rotate(180deg);
   }
 }
 .hamburger {
@@ -1133,6 +1129,30 @@ a::selection {
   -o-transform: perspective(2500px) rotateX(0deg);
 }
 
+.reveal3 {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+  -webkit-transform: translateX(150px);
+  -moz-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  -o-transform: translateX(150px);
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+}
+
+.reveal3.active {
+  transform: translateX(0);
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
 .wavesss {
   height: 108px;
 }
@@ -1184,15 +1204,6 @@ a::selection {
   }
   100% {
     transform: translate3d(85px, 0, 0);
-  }
-}
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-  .content {
-    height: 30vh;
   }
 }
 .wave1 {

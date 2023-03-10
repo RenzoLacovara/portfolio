@@ -43,10 +43,10 @@ function toggle() {
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
+  var windowHeight = window.innerHeight;
+  var elementVisible = 150;
   for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -57,14 +57,21 @@ function reveal() {
   var reveals2 = document.querySelectorAll(".reveal2");
 
   for (var i = 0; i < reveals2.length; i++) {
-    var windowHeight = window.innerHeight;
     var elementTop = reveals2[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
     if (elementTop < windowHeight - elementVisible) {
       reveals2[i].classList.add("active");
     } else {
       reveals2[i].classList.remove("active");
+    }
+  }
+  var reveals3 = document.querySelectorAll(".reveal3");
+
+  for (var i = 0; i < reveals3.length; i++) {
+    var elementTop = reveals3[i].getBoundingClientRect().top;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals3[i].classList.add("active");
+    } else {
+      reveals3[i].classList.remove("active");
     }
   }
 }
