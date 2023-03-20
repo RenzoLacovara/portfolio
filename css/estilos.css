@@ -655,7 +655,7 @@ body .goup a i:hover {
   background-color: #edf2f4;
 }
 #certificados .enlace a:hover {
-  background-color: #e54d26;
+  background-color: #e56d47;
   color: #edf2f4;
 }
 
@@ -954,7 +954,7 @@ a::selection {
 }
 
 .wavesss {
-  height: 108px;
+  height: 100px;
 }
 
 .waves {
@@ -1293,7 +1293,6 @@ a::selection {
 }
 .section .tiles {
   padding: 0;
-  background: #fff;
   clear: both;
   display: none;
   float: none;
@@ -1319,6 +1318,27 @@ a::selection {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -o-filter: grayscale(0%);
+}
+.section .tiles #oishi1 {
+  object-position: top;
+}
+.section .tiles #oishi3 {
+  object-position: bottom;
+}
+.section .tiles #hogs1 {
+  object-position: top;
+}
+.section .tiles #hogs2 {
+  object-position: top;
+}
+.section .tiles #hogs3 {
+  object-position: 0px -17px;
+}
+.section .tiles #pms1 {
+  object-position: top;
+}
+.section .tiles #pms3 {
+  object-position: bottom;
 }
 @media (min-width: 990px) {
   .section .tiles {
