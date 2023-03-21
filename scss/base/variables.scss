@@ -4,3 +4,28 @@ $color-secundario: #212121;
 $color-secundariod: #121212;
 $color-detalled: #e28868;
 $color-detalle: #d72638;
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin transition {
+  -moz-transition: 0.5s ease-in-out all;
+  -o-transition: 0.5s ease-in-out all;
+  -webkit-transition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
+  -ms-transition: 0.5s ease-in-out all;
+}
+
+@mixin filter($filter) {
+  -webkit-filter: $filter;
+  -moz-filter: $filter;
+  -o-filter: $filter;
+}
+
+$sm: 660px;
+$md: 990px;
+$lg: 992px;

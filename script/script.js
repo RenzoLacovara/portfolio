@@ -79,21 +79,6 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 $(document).ready(function () {
-  $slides = $(".slides");
-  $slides.bind("contentchanged", function () {
-    animate($slides);
-  });
-  animate($slides);
-});
-
-function animate($slides) {
-  var slidesLength = $slides.find("li").length;
-  if (slidesLength > 3) {
-    $slides.addClass("animate");
-    $slides.css("animation-duration", slidesLength * 2 + "s");
-  }
-}
-$(document).ready(function () {
   var $sm = 660;
   var $md = 768;
 

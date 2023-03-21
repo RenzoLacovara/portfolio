@@ -922,7 +922,7 @@ a::selection {
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
+  margin-bottom: -7px;
   min-height: 100px;
   max-height: 150px;
 }
@@ -933,8 +933,6 @@ a::selection {
   text-align: center;
   background-color: $color-detalled;
 }
-
-/* Animation */
 
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
@@ -971,118 +969,70 @@ a::selection {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
-.wrap {
+.slider {
   width: 100%;
-  height: 350px;
-  position: relative;
+  height: 320px;
+  margin: auto;
   overflow: hidden;
-  padding: 30px 0px;
-  @media screen and (max-width: 450px) {
-    height: 300px;
-  }
-}
-
-.slide-container {
-  position: absolute;
-  left: 0;
-  height: 100%;
-}
-
-.slides {
-  display: flex;
-  flex: row;
-  flex-wrap: no-wrap;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.animate {
-  animation: moveSlideshow 40s infinite alternate linear;
-  -webkit-animation: moveSlideshow 40s infinite alternate linear;
-}
-
-@keyframes moveSlideshow {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(calc(-100% + (2 * 680px)));
-    -webkit-transform: translate(calc(-100% + (2 * 680px)));
-    -moz-transform: translate(calc(-100% + (2 * 680px)));
-    -ms-transform: translate(calc(-100% + (2 * 680px)));
-    -o-transform: translate(calc(-100% + (2 * 680px)));
-  }
-}
-.slides {
-  height: 300px;
-}
-.slides li {
-  display: block;
-  box-sizing: border-box;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.slides li > div {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  justify-content: center;
-  align-self: center;
-}
-
-.slides li img {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  margin: 0px 10px;
-  width: 320px;
-  object-fit: cover;
-  cursor: zoom-in;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  @media screen and (max-width: 450px) {
-    width: 250px;
-  }
-  &:hover {
-    opacity: 0.7;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
-}
-@mixin vertical-align {
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  @media screen and (max-width: 450px) {
+    height: 270px;
+  }
+  .slide-track {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(320px * 18);
+    .slide {
+      width: 320px;
+      margin: 0px 10px;
+      @media screen and (max-width: 450px) {
+        width: 250px;
+      }
+    }
+    img {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      width: 100%;
+      object-fit: cover;
+      cursor: zoom-in;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      @media screen and (max-width: 450px) {
+        width: 250px;
+      }
+      &:hover {
+        opacity: 0.7;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      }
+    }
+  }
 }
 
-@mixin transition {
-  -moz-transition: 0.5s ease-in-out all;
-  -o-transition: 0.5s ease-in-out all;
-  -webkit-transition: 0.5s ease-in-out all;
-  transition: 0.5s ease-in-out all;
-  -ms-transition: 0.5s ease-in-out all;
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-320px * 9));
+    transform: translateX(calc(-320px * 9));
+    -moz-transform: translateX(calc(-320px * 9));
+    -ms-transform: translateX(calc(-320px * 9));
+    -o-transform: translateX(calc(-320px * 9));
+  }
 }
-
-@mixin filter($filter) {
-  -webkit-filter: $filter;
-  -moz-filter: $filter;
-  -o-filter: $filter;
-}
-
-$sm: 660px;
-$md: 990px;
-$lg: 992px;
 
 .section {
   width: 95%;
