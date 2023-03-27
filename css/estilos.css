@@ -1040,6 +1040,7 @@ a::selection {
   }
 }
 .slider .slide-track {
+  padding-top: 15px;
   position: absolute;
   left: 0;
   height: 100%;
@@ -1552,20 +1553,20 @@ a::selection {
     -o-transform: rotate(15deg);
   }
 }
-svg:hover #yo2 {
+.logo > svg:hover #yo2 {
   opacity: 1;
 }
 
-svg:hover #yo1 {
+.logo > svg:hover #yo1 {
   opacity: 0;
 }
 
-svg:hover {
+.logo > svg:hover {
   animation: shake 0.4s;
   -webkit-animation: shake 0.4s;
 }
 
-svg {
+.logo > svg {
   filter: invert(97%);
   -webkit-filter: invert(97%);
 }
