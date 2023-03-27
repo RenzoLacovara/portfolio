@@ -1,9 +1,26 @@
+@use "sass:color";
 $color-principal: #edf2f4;
 $color-principald: #dfe0e0;
 $color-secundario: #212121;
 $color-secundariod: #121212;
 $color-detalled: #e28868;
 $color-detalle: #d72638;
+
+$colors: (
+  "html": #e54d26,
+  "css": #0170ba,
+  "sass": #cd6799,
+  "boots": #7911f7,
+  "js": #d5b92d,
+  "react": #61dafb,
+  "tw": #1bb5b9,
+);
+:root {
+  @each $name, $value in $colors {
+    --#{$name}-light: #{color.adjust($value, $lightness: 20%)};
+    --#{$name}-dark: #{color.adjust($value, $lightness: -40%)};
+  }
+}
 @mixin vertical-align {
   position: relative;
   top: 50%;
