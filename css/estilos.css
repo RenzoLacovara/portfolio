@@ -222,6 +222,13 @@ body header nav .container-fluid .offcanvas .offcanvas-body ul {
     padding-right: 30px;
   }
 }
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link1,
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link2,
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link3,
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link4,
+body header nav .container-fluid .offcanvas .offcanvas-body ul #link5 {
+  font-size: 0.9rem;
+}
 @media only screen and (width: 768px) {
   body header nav .container-fluid .offcanvas .offcanvas-body ul #link1,
 body header nav .container-fluid .offcanvas .offcanvas-body ul #link2,
@@ -235,7 +242,7 @@ body header nav .container-fluid .offcanvas .offcanvas-body ul #link5 {
   }
 }
 body header nav .container-fluid .offcanvas .offcanvas-body ul li {
-  margin: 10px auto;
+  margin: 8px auto;
   list-style: none;
 }
 @media screen and (max-width: 767px) {
@@ -1370,7 +1377,7 @@ a::selection {
 }
 @media screen and (max-width: 424px) {
   :root {
-    --orbit-radius: 120px;
+    --orbit-radius: 130px;
   }
 }
 

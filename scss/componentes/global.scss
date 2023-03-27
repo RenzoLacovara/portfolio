@@ -178,6 +178,7 @@ body {
               #link3,
               #link4,
               #link5 {
+                font-size: 0.9rem;
                 @media only screen and (width: 768px) {
                   margin: 0px;
                   padding: 0px;
@@ -186,7 +187,7 @@ body {
                 }
               }
               li {
-                margin: 10px auto;
+                margin: 8px auto;
                 list-style: none;
 
                 @media screen and (max-width: 767px) {
@@ -1293,7 +1294,7 @@ a::selection {
   --circle-item-count: 7;
   --circle-item-index: 0;
   @media screen and (max-width: 424px) {
-    --orbit-radius: 120px;
+    --orbit-radius: 130px;
   }
 }
 
