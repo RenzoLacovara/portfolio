@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RenzoLacovara/portfolio#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "typed.js": "^2.0.12"
   }
 }
