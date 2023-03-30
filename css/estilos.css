@@ -275,16 +275,8 @@ body main .container_intro {
   padding-top: 30px;
 }
 body main .container_intro .namee {
-  position: relative;
-  color: transparent;
-  -webkit-text-stroke: 1px #edf2f4;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-}
-body main .container_intro .namee:hover {
+  animation: intro 2s ease;
+  -webkit-animation: intro 2s ease;
   color: #edf2f4;
   -webkit-text-stroke: #121212;
   text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
@@ -315,19 +307,13 @@ body main .container_intro h3 span {
 body main .container_sobremi {
   margin-top: 30px;
   width: 100%;
-  animation-delay: 0.2s;
-}
-body main .container_sobremi .name {
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
-body main .container_sobremi .name:hover {
-  text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
 }
 body main .container_sobremi h2 {
+  animation: intro 2.5s ease;
+  -webkit-animation: intro 2.5s ease;
+  color: #edf2f4;
+  -webkit-text-stroke: #121212;
+  text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
   font-size: 2.5rem;
 }
 @media screen and (max-width: 550px) {
@@ -364,17 +350,10 @@ body main .container_proyectos {
   margin-top: 60px;
 }
 body main .container_proyectos h2 {
-  font-size: 2.5rem;
-}
-body main .container_proyectos h2 .name {
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
-body main .container_proyectos h2 .name:hover {
+  color: #edf2f4;
+  -webkit-text-stroke: #121212;
   text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 550px) {
   body main .container_proyectos h2 {
@@ -409,17 +388,8 @@ body main .container_certificados .tag {
   color: #121212;
 }
 body main .container_certificados h2 {
-  font-size: 2.5rem;
-}
-body main .container_certificados h2 .name {
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
-body main .container_certificados h2 .name:hover {
   text-shadow: 3px 3px 0px #e54d26, 6px 6px 0px #121212;
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 550px) {
   body main .container_certificados h2 {
@@ -440,6 +410,11 @@ body main #tools {
   margin-top: 50px;
   width: 100%;
   overflow: hidden;
+}
+body main #tools h2 {
+  color: #edf2f4;
+  -webkit-text-stroke: #121212;
+  text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
 }
 body main #tools .stack-div {
   width: 100%;
@@ -481,16 +456,6 @@ body main #tools .stack-div .tools .stack:hover > :not(:hover) {
   filter: grayscale(0.8);
   -webkit-filter: grayscale(0.8);
   opacity: 0.5;
-}
-body main #tools .stack-div .tools h2 .name {
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
-body main #tools .stack-div .tools h2 .name:hover {
-  text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
 }
 body main #tools .stack-div .tools img {
   margin: 10px;
@@ -1061,11 +1026,11 @@ a::selection {
   height: 100%;
   text-align: center;
   overflow: hidden;
-  -moz-transition: 0.5s ease-in-out all;
-  -o-transition: 0.5s ease-in-out all;
-  -webkit-transition: 0.5s ease-in-out all;
-  transition: 0.5s ease-in-out all;
-  -ms-transition: 0.5s ease-in-out all;
+  -moz-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -ms-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
 @media (min-width: 660px) {
   .section .left .content,
@@ -1232,11 +1197,11 @@ a::selection {
   float: left;
   opacity: 0.7;
   object-fit: cover;
-  -moz-transition: 0.5s ease-in-out all;
-  -o-transition: 0.5s ease-in-out all;
-  -webkit-transition: 0.5s ease-in-out all;
-  transition: 0.5s ease-in-out all;
-  -ms-transition: 0.5s ease-in-out all;
+  -moz-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -ms-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
@@ -1581,18 +1546,33 @@ a::selection {
 }
 
 .active.fade-bottom {
-  animation: fade-bottom 0.5s ease-in;
-  -webkit-animation: fade-bottom 0.5s ease-in;
+  animation: fade-bottom 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-bottom 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.active.fade-bottom2 {
+  animation: fade-bottom2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-bottom2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .active.fade-left {
-  animation: fade-left 0.5s ease-in;
-  -webkit-animation: fade-left 0.5s ease-in;
+  animation: fade-left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .active.fade-right {
-  animation: fade-right 0.5s ease-in;
-  -webkit-animation: fade-right 0.5s ease-in;
+  animation: fade-right 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-right 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.active.intro {
+  animation: intro 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: intro 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.active.intro2 {
+  animation: intro2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: intro2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 @keyframes fade-bottom {
@@ -1605,10 +1585,69 @@ a::selection {
     opacity: 1;
   }
 }
+@keyframes fade-bottom2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes intro {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 1px #edf2f4;
+    text-shadow: none;
+  }
+  70% {
+    color: transparent;
+    -webkit-text-stroke: 1px #edf2f4;
+    text-shadow: none;
+  }
+  100% {
+    color: #edf2f4;
+    -webkit-text-stroke: #121212;
+    text-shadow: 3px 3px 0px #e28868, 6px 6px 0px #121212;
+  }
+}
+@keyframes intro2 {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 1px #edf2f4;
+    text-shadow: none;
+  }
+  70% {
+    color: transparent;
+    -webkit-text-stroke: 1px #edf2f4;
+    text-shadow: none;
+  }
+  100% {
+    color: #edf2f4;
+    -webkit-text-stroke: transparent;
+    text-shadow: 3px 3px 0px #e54d26, 6px 6px 0px #121212;
+  }
+}
 @keyframes fade-left {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-200px);
     opacity: 0;
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
   }
   100% {
     transform: translateX(0);
@@ -1617,8 +1656,15 @@ a::selection {
 }
 @keyframes fade-right {
   0% {
+    opacity: 0;
+  }
+  50% {
     transform: translateX(100px);
     opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
   }
   100% {
     transform: translateX(0);

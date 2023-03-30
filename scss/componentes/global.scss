@@ -225,20 +225,11 @@ body {
     .container_intro {
       padding-top: 30px;
       .namee {
-        position: relative;
-        color: transparent;
-        -webkit-text-stroke: 1px $color-principal;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        &:hover {
-          color: $color-principal;
-          -webkit-text-stroke: $color-secundariod;
-          text-shadow: 3px 3px 0px $color-detalled,
-            6px 6px 0px $color-secundariod;
-        }
+        animation: intro 2s ease;
+        -webkit-animation: intro 2s ease;
+        color: $color-principal;
+        -webkit-text-stroke: $color-secundariod;
+        text-shadow: 3px 3px 0px $color-detalled, 6px 6px 0px $color-secundariod;
       }
 
       .titulo {
@@ -265,19 +256,13 @@ body {
     .container_sobremi {
       margin-top: 30px;
       width: 100%;
-      animation-delay: 0.2s;
-      .name {
-        transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        &:hover {
-          text-shadow: 3px 3px 0px $color-detalled,
-            6px 6px 0px $color-secundariod;
-        }
-      }
+
       h2 {
+        animation: intro 2.5s ease;
+        -webkit-animation: intro 2.5s ease;
+        color: $color-principal;
+        -webkit-text-stroke: $color-secundariod;
+        text-shadow: 3px 3px 0px $color-detalled, 6px 6px 0px $color-secundariod;
         font-size: 2.5rem;
         @media screen and (max-width: 550px) {
           font-size: 1.6rem;
@@ -311,17 +296,10 @@ body {
       margin-top: 60px;
 
       h2 {
-        .name {
-          transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-          -ms-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          &:hover {
-            text-shadow: 3px 3px 0px $color-detalled,
-              6px 6px 0px $color-secundariod;
-          }
-        }
+        color: $color-principal;
+        -webkit-text-stroke: $color-secundariod;
+        text-shadow: 3px 3px 0px $color-detalled, 6px 6px 0px $color-secundariod;
+
         font-size: 2.5rem;
         @media screen and (max-width: 550px) {
           font-size: 1.6rem;
@@ -351,16 +329,8 @@ body {
         color: $color-secundariod;
       }
       h2 {
-        .name {
-          transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-          -ms-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          &:hover {
-            text-shadow: 3px 3px 0px #e54d26, 6px 6px 0px $color-secundariod;
-          }
-        }
+        text-shadow: 3px 3px 0px #e54d26, 6px 6px 0px $color-secundariod;
+
         font-size: 2.5rem;
         @media screen and (max-width: 550px) {
           font-size: 1.6rem;
@@ -379,6 +349,11 @@ body {
       margin-top: 50px;
       width: 100%;
       overflow: hidden;
+      h2 {
+        color: $color-principal;
+        -webkit-text-stroke: $color-secundariod;
+        text-shadow: 3px 3px 0px $color-detalled, 6px 6px 0px $color-secundariod;
+      }
       .stack-div {
         width: 100%;
         display: flex;
@@ -420,19 +395,7 @@ body {
               opacity: 0.5;
             }
           }
-          h2 {
-            .name {
-              transition: all 0.5s ease;
-              -webkit-transition: all 0.5s ease;
-              -moz-transition: all 0.5s ease;
-              -ms-transition: all 0.5s ease;
-              -o-transition: all 0.5s ease;
-              &:hover {
-                text-shadow: 3px 3px 0px $color-detalled,
-                  6px 6px 0px $color-secundariod;
-              }
-            }
-          }
+
           img {
             margin: 10px;
             width: 90px;
@@ -1491,16 +1454,30 @@ a::selection {
   opacity: 1;
 }
 .active.fade-bottom {
-  animation: fade-bottom 0.5s ease-in;
-  -webkit-animation: fade-bottom 0.5s ease-in;
+  animation: fade-bottom 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-bottom 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.active.fade-bottom2 {
+  animation: fade-bottom2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-bottom2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 .active.fade-left {
-  animation: fade-left 0.5s ease-in;
-  -webkit-animation: fade-left 0.5s ease-in;
+  animation: fade-left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .active.fade-right {
-  animation: fade-right 0.5s ease-in;
-  -webkit-animation: fade-right 0.5s ease-in;
+  animation: fade-right 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-right 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.active.intro {
+  animation: intro 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: intro 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.active.intro2 {
+  animation: intro2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: intro2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 @keyframes fade-bottom {
   0% {
@@ -1512,10 +1489,69 @@ a::selection {
     opacity: 1;
   }
 }
+@keyframes fade-bottom2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes intro {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 1px $color-principal;
+    text-shadow: none;
+  }
+  70% {
+    color: transparent;
+    -webkit-text-stroke: 1px $color-principal;
+    text-shadow: none;
+  }
+  100% {
+    color: $color-principal;
+    -webkit-text-stroke: $color-secundariod;
+    text-shadow: 3px 3px 0px $color-detalled, 6px 6px 0px $color-secundariod;
+  }
+}
+@keyframes intro2 {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 1px $color-principal;
+    text-shadow: none;
+  }
+  70% {
+    color: transparent;
+    -webkit-text-stroke: 1px $color-principal;
+    text-shadow: none;
+  }
+  100% {
+    color: $color-principal;
+    -webkit-text-stroke: transparent;
+    text-shadow: 3px 3px 0px #e54d26, 6px 6px 0px $color-secundariod;
+  }
+}
 @keyframes fade-left {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-200px);
     opacity: 0;
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
   }
   100% {
     transform: translateX(0);
@@ -1525,8 +1561,15 @@ a::selection {
 
 @keyframes fade-right {
   0% {
+    opacity: 0;
+  }
+  50% {
     transform: translateX(100px);
     opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
   }
   100% {
     transform: translateX(0);
