@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
 :root {
   --html-light: #f09881;
   --html-dark: #381107;
@@ -1669,6 +1670,192 @@ a::selection {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes fade-right2 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(100px);
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  position: relative;
+  padding-top: 120px;
+  height: 400px;
+}
+@media screen and (max-width: 930px) {
+  .person {
+    padding-top: 20px;
+    height: 300px;
+    width: 100px;
+  }
+}
+
+.container {
+  border-radius: 50%;
+  height: 412px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.54);
+  -webkit-transform: scale(0.54);
+  -moz-transform: scale(0.54);
+  -ms-transform: scale(0.54);
+  -o-transform: scale(0.54);
+  width: 500px;
+  animation: fondo 4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fondo 4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media screen and (max-width: 930px) {
+  .container {
+    width: 10px;
+    padding-right: 200px;
+  }
+}
+
+.container:after {
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%;
+}
+
+.container-inner {
+  clip-path: path("M 490,400 C 490,504.9341 404.9341,590 300,590 195.065898,590 1,504.9341 10,400 V 1 H 200 490 Z");
+  position: relative;
+  transform-origin: 50%;
+  top: -300px;
+  width: 200px;
+}
+
+.circle {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 480px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 140px;
+  width: 480px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: #212121 2px solid;
+}
+
+.img {
+  pointer-events: none;
+  position: relative;
+  animation: imagen 4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  -webkit-animation: imagen 4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translateY(0) scale(1.2);
+}
+
+.img1 {
+  left: 22px;
+  top: 104px;
+  width: 440px;
+}
+
+.person .text-globe {
+  position: absolute;
+  top: 90px;
+  right: -40px;
+  filter: drop-shadow(-3px 0 0 #222) drop-shadow(3px 0 0 #222) drop-shadow(0 -3px 0 #222) drop-shadow(0 3px 0 #222);
+  z-index: 3;
+  -webkit-filter: drop-shadow(-3px 0 0 #222) drop-shadow(3px 0 0 #222) drop-shadow(0 -3px 0 #222) drop-shadow(0 3px 0 #222);
+  animation: fade-right2 4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fade-right2 4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media screen and (max-width: 930px) {
+  .person .text-globe {
+    top: -10px;
+    right: -250px;
+  }
+}
+
+.text-globe .text {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 30px;
+  text-align: center;
+  width: 100px;
+  height: 75px;
+  background: #eee;
+  display: flex;
+  place-items: center;
+  border-radius: 25px/40px;
+  color: #222;
+  line-height: 20px;
+  padding-left: 8px;
+}
+
+.text-globe .arrow {
+  width: 30px;
+  height: 40px;
+  background: #eee;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform: translate(20px, -15px) rotate(35deg);
+  position: relative;
+  z-index: -1;
+}
+
+@keyframes fondo {
+  0% {
+    transform: scale(0.48);
+  }
+  75% {
+    transform: scale(0.48);
+  }
+  100% {
+    transform: scale(0.54);
+    -webkit-transform: scale(0.54);
+    -moz-transform: scale(0.54);
+    -ms-transform: scale(0.54);
+    -o-transform: scale(0.54);
+  }
+}
+@keyframes imagen {
+  0% {
+    transform: translateY(20px) scale(1.15);
+    transform-origin: 50% bottom;
+  }
+  75% {
+    transform: translateY(20px) scale(1.15);
+    transform-origin: 50% bottom;
+  }
+  80% {
+    transform: translateY(0) scale(1.2);
+  }
+}
+.banner-intro {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+@media screen and (max-width: 930px) {
+  .banner-intro {
+    flex-direction: column;
+    align-items: start;
   }
 }
 
