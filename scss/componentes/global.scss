@@ -1470,6 +1470,12 @@ a::selection {
   animation: fade-right 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-animation: fade-right 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.active.fade-right2 {
+  animation: fade-right2 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    float 5s ease-in-out infinite;
+  -webkit-animation: fade-right2 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    float 5s ease-in-out infinite;
+}
 .active.intro {
   animation: intro 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-animation: intro 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -1611,4 +1617,262 @@ a::selection {
   100% {
     background-position: 0% 0%;
   }
+}
+.containerr {
+  margin-top: 50px;
+  position: relative;
+  height: 340px;
+  width: 400px;
+  animation: fondo 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  //animation: anim 60s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  //-webkit-animation: anim 60s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin-left: 60px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+  @media screen and (max-width: 500px) {
+    margin: 20px 5%;
+    // height: 400px;
+    width: 90%;
+  }
+}
+.container-inner {
+  background-color: $color-detalled;
+  background-image: url(../Imagenes/cross.svg);
+  background-size: contain;
+  background-repeat: repeat;
+  height: 300px;
+  width: 100%;
+  animation: bgmove 20s linear infinite reverse;
+  -webkit-animation: bgmove 20s linear infinite reverse;
+
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  position: absolute;
+  top: 70px;
+
+  @media screen and (max-width: 600px) {
+    // height: 300px;
+
+    // top: 90px;
+  }
+}
+
+.img {
+  pointer-events: none;
+  position: relative;
+  animation: imagen 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  -webkit-animation: imagen 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translateY(0) scale(1.2);
+  top: -30px;
+  width: 250px;
+  left: 15px;
+  @media screen and (max-width: 440px) {
+    // width: 250px;
+    // top: 20px;
+    left: -25px;
+  }
+}
+
+@keyframes fondo {
+  0% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@keyframes imagen {
+  0% {
+    transform: translateY(20px) scale(1.15);
+    transform-origin: 50% bottom;
+  }
+  50% {
+    transform: translateY(20px) scale(1.15);
+    transform-origin: 50% bottom;
+  }
+  80% {
+    transform: translateY(0) scale(1.2);
+  }
+}
+.banner-intro {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  @media screen and (max-width: 1160px) {
+    flex-direction: column;
+    width: 100%;
+    // margin: auto;
+  }
+}
+@keyframes anim {
+  0% {
+    border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+  }
+  5% {
+    border-radius: 48% 52% 41% 59% / 66% 37% 63% 34%;
+  }
+  10% {
+    border-radius: 69% 31% 71% 29% / 67% 31% 69% 33%;
+  }
+  15% {
+    border-radius: 60% 40% 71% 29% / 63% 65% 35% 37%;
+  }
+  20% {
+    border-radius: 61% 39% 51% 49% / 57% 58% 42% 43%;
+  }
+  25% {
+    border-radius: 66% 34% 25% 75% / 47% 30% 70% 53%;
+  }
+  30% {
+    border-radius: 32% 68% 38% 62% / 65% 60% 40% 35%;
+  }
+  35% {
+    border-radius: 63% 37% 41% 59% / 35% 38% 62% 65%;
+  }
+  40% {
+    border-radius: 57% 43% 49% 51% / 55% 71% 29% 45%;
+  }
+  45% {
+    border-radius: 47% 53% 34% 66% / 65% 36% 64% 35%;
+  }
+  50% {
+    border-radius: 44% 56% 32% 68% / 69% 26% 74% 31%;
+  }
+  55% {
+    border-radius: 28% 72% 37% 63% / 71% 44% 56% 29%;
+  }
+  60% {
+    border-radius: 38% 62% 35% 65% / 74% 53% 47% 26%;
+  }
+  65% {
+    border-radius: 73% 27% 46% 54% / 54% 47% 53% 46%;
+  }
+  70% {
+    border-radius: 75% 25% 47% 53% / 49% 53% 47% 51%;
+  }
+  75% {
+    border-radius: 62% 38% 43% 57% / 55% 60% 40% 45%;
+  }
+  80% {
+    border-radius: 41% 59% 65% 35% / 73% 50% 50% 27%;
+  }
+  85% {
+    border-radius: 55% 45% 57% 43% / 73% 61% 39% 27%;
+  }
+  90% {
+    border-radius: 74% 26% 33% 67% / 40% 65% 35% 60%;
+  }
+  95% {
+    border-radius: 58% 42% 57% 43% / 53% 45% 55% 47%;
+  }
+  100% {
+    border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    line-height: 30px;
+    transform: translatey(0px);
+  }
+  55% {
+    transform: translatey(-20px);
+  }
+  60% {
+    line-height: 10px;
+  }
+  100% {
+    line-height: 30px;
+    transform: translatey(0px);
+  }
+}
+.thought {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  min-width: 40px;
+  max-width: 220px;
+  min-height: 40px;
+  margin: 20px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  right: 5px;
+  top: -50px;
+  z-index: 20;
+  color: $color-secundario;
+  font-size: 1.2rem;
+  animation: float 5s ease-in-out infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  @media screen and (max-width: 500px) {
+    right: -5px;
+    top: -50px;
+  }
+}
+.thought:before,
+.thought:after {
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.thought:before {
+  width: 44px;
+  height: 44px;
+  top: -12px;
+  left: 28px;
+  box-shadow: -50px 30px 0 -12px #fff;
+}
+.thought:after {
+  bottom: -10px;
+  right: 26px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 40px -34px 0 0 #fff, -58px -6px 0 -2px #fff,
+    -50px 17px 0 -6px #fff, -65px 25px 0 -10px #fff;
 }
