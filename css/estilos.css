@@ -1028,11 +1028,11 @@ a::selection {
   height: 100%;
   text-align: center;
   overflow: hidden;
-  -moz-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  -ms-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -moz-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -o-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -webkit-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -ms-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
 @media (min-width: 660px) {
   .section .left .content,
@@ -1199,11 +1199,11 @@ a::selection {
   float: left;
   opacity: 0.7;
   object-fit: cover;
-  -moz-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  -ms-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -moz-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -o-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -webkit-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  -ms-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
