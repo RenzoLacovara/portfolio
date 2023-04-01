@@ -1750,9 +1750,10 @@ a::selection {
   align-items: center;
   width: 100%;
 
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 1050px) {
     flex-direction: column;
     width: 100%;
+    align-items: start;
     // margin: auto;
   }
 }
