@@ -1652,13 +1652,6 @@ a::selection {
   -ms-transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -o-transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.containerr:hover {
-  transform: translateY(-20px);
-  -webkit-transform: translateY(-20px);
-  -moz-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  -o-transform: translateY(-20px);
-}
 @media screen and (max-width: 990px) {
   .containerr {
     margin: 0px 60px;
@@ -1672,7 +1665,7 @@ a::selection {
 }
 
 .container-inner {
-  background-image: url(../Imagenes/Cloudy2.svg);
+  background-image: url(../Imagenes/Cloudy.svg);
   background-size: cover;
   height: 270px;
   width: 100%;
