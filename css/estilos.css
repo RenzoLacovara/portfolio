@@ -307,8 +307,8 @@ body main .container_intro h3 span {
   }
 }
 body main .container_sobremi {
-  margin-top: 30px;
   width: 100%;
+  margin-top: 10px;
 }
 body main .container_sobremi h2 {
   animation: intro 2.5s ease;
@@ -532,8 +532,10 @@ body main .container_contacto .contacto_saludo {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background-color: #e28868;
-  color: #212121;
+  background-image: url(../Imagenes/peak.svg);
+  background-size: contain;
+  background-repeat: repeat;
+  color: #edf2f4;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   margin-bottom: 60px;
 }
@@ -1716,7 +1718,7 @@ a::selection {
   }
 }
 .containerr {
-  margin: 50px 20px 0px;
+  margin: 0px 20px 50px;
   position: relative;
   height: 340px;
   width: 400px;
@@ -1826,7 +1828,8 @@ a::selection {
 }
 .banner-intro {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 @media screen and (max-width: 990px) {
