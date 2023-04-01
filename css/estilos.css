@@ -996,7 +996,7 @@ a::selection {
   transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   -ms-transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
-@media (min-width: 660px) {
+@media (max-width: 660px) {
   .section .left .content,
 .section .middle .content,
 .section .right .content {
@@ -1068,8 +1068,8 @@ a::selection {
 }
 @media (max-width: 660px) {
   .section .title {
-    height: 60%;
-    padding-top: 60px;
+    height: 55%;
+    margin: 0px;
   }
 }
 .section .title .content {
