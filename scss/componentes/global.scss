@@ -215,7 +215,11 @@ body {
   main {
     grid-area: body;
     width: 100%;
-
+    .titulo {
+      display: flex;
+      height: 40px;
+      width: 100%;
+    }
     div {
       .inli {
         display: inline-block;
@@ -231,9 +235,6 @@ body {
         text-shadow: 3px 3px 0px $color-detalled, 6px 6px 0px $color-secundariod;
       }
 
-      .titulo {
-        padding-top: 30px;
-      }
       h1 {
         font-size: 4.5rem;
         @media screen and (max-width: 550px) {
@@ -322,7 +323,8 @@ body {
     }
     .container_certificados {
       background-color: $color-detalled;
-      padding: 60px 0px 20px;
+
+      padding: 40px 0px;
       .tag {
         color: $color-secundariod;
       }
@@ -804,13 +806,16 @@ a::selection {
 }
 
 .wavesss {
-  height: 100px;
+  height: 120px;
+  @media screen and (max-width: 768px) {
+    height: 140px;
+  }
 }
 .waves {
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px;
+
   min-height: 100px;
   max-height: 150px;
 }
@@ -857,6 +862,7 @@ a::selection {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+
 .slider {
   width: 100%;
   height: 320px;
