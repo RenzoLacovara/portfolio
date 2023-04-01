@@ -29,8 +29,6 @@ body {
   background-repeat: repeat;
   color: #edf2f4;
   font-family: "Josefin Sans", sans-serif;
-  animation: bgmove 30s linear infinite;
-  -webkit-animation: bgmove 30s linear infinite;
 }
 @media screen and (max-width: 768px) {
   body {
@@ -1669,8 +1667,6 @@ a::selection {
   background-size: cover;
   height: 270px;
   width: 100%;
-  outline: solid 4px #212121;
-  outline-offset: -3px;
   animation: bgmove2 20s ease-in-out infinite;
   border-radius: 30px;
   -webkit-border-radius: 30px;

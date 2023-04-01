@@ -12,8 +12,8 @@ body {
   background-repeat: repeat;
   color: $color-principal;
   font-family: "Josefin Sans", sans-serif;
-  animation: bgmove 30s linear infinite;
-  -webkit-animation: bgmove 30s linear infinite;
+  // animation: bgmove 30s linear infinite;
+  // -webkit-animation: bgmove 30s linear infinite;
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 100%;
@@ -1571,8 +1571,6 @@ a::selection {
   background-size: cover;
   height: 270px;
   width: 100%;
-  outline: solid 4px $color-secundario;
-  outline-offset: -3px;
   animation: bgmove2 20s ease-in-out infinite;
   border-radius: 30px;
   -webkit-border-radius: 30px;
