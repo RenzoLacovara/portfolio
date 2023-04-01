@@ -1716,19 +1716,36 @@ a::selection {
   }
 }
 .containerr {
-  margin-top: 50px;
+  margin: 50px 20px 0px;
   position: relative;
   height: 340px;
   width: 400px;
   animation: fondo 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: fondo 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  margin-left: 60px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.containerr:hover {
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+@media screen and (max-width: 990px) {
+  .containerr {
+    margin: 0px 60px;
+  }
 }
 @media screen and (max-width: 500px) {
   .containerr {
@@ -1738,14 +1755,13 @@ a::selection {
 }
 
 .container-inner {
-  background-color: #e28868;
-  background-image: url(../Imagenes/cross.svg);
+  background-image: url(../Imagenes/peak.svg);
   background-size: contain;
   background-repeat: repeat;
-  height: 300px;
+  height: 270px;
   width: 100%;
-  animation: bgmove 20s linear infinite reverse;
-  -webkit-animation: bgmove 20s linear infinite reverse;
+  outline: solid 4px #212121;
+  outline-offset: -3px;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -1813,7 +1829,7 @@ a::selection {
   justify-content: space-evenly;
   width: 100%;
 }
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 990px) {
   .banner-intro {
     flex-direction: column;
     width: 100%;
